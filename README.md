@@ -18,7 +18,7 @@ Add the following to your pom.xml file:
     <dependency>
         <groupId>com.github.caseyscarborough</groupId>
         <artifactId>wanikani-api</artifactId>
-        <version>master</version>
+        <version>v0.1</version>
     </dependency>
 </dependencies>
 ```
