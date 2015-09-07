@@ -1,7 +1,5 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Kanji {
 
   private String character;
@@ -9,13 +7,8 @@ public class Kanji {
   private String onyomi;
   private String kunyomi;
   private String nanori;
-
-  @JsonProperty("important_reading")
   private String importantReading;
-
   private Integer level;
-
-  @JsonProperty("user_specific")
   private Statistics statistics;
 
   public Kanji() {

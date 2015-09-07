@@ -1,19 +1,10 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class LevelProgression {
 
-  @JsonProperty("radicals_progress")
   private Integer radicalsProgress;
-
-  @JsonProperty("radicals_total")
   private Integer radicalsTotal;
-
-  @JsonProperty("kanji_progress")
   private Integer kanjiProgress;
-
-  @JsonProperty("kanji_total")
   private Integer kanjiTotal;
 
   public LevelProgression() {

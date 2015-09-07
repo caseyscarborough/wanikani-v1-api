@@ -3,10 +3,10 @@ package com.wanikani.api;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.wanikani.api.model.*;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -15,12 +15,17 @@ import java.util.List;
 public class WaniKaniClient {
 
   private String apiKey;
+  private ObjectMapper mapper;
 
   public WaniKaniClient(String apiKey) {
     if (apiKey == null || apiKey.trim().isEmpty()) {
       throw new RuntimeException("An API key is required to make requests to the API. Get your API key at https://www.wanikani.com/account.");
     }
     this.apiKey = apiKey;
+    mapper = new ObjectMapper();
+    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    mapper.setPropertyNamingStrategy(PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES);
+
   }
 
   private String getBaseUrl() {
@@ -116,16 +121,10 @@ public class WaniKaniClient {
         response.append(inputLine);
       }
       in.close();
-      return parse(response.toString(), reference);
+      return mapper.readValue(response.toString(), reference);
     } catch (Exception e) {
       e.printStackTrace();
       throw new RuntimeException();
     }
-  }
-
-  private <T> T parse(String response, TypeReference<T> reference) throws IOException {
-    ObjectMapper mapper = new ObjectMapper();
-    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-    return mapper.readValue(response, reference);
   }
 }

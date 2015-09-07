@@ -1,22 +1,11 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class StudyQueue {
 
-  @JsonProperty("lessons_available")
   private Integer lessonsAvailable;
-
-  @JsonProperty("reviews_available")
   private Integer reviewsAvailable;
-
-  @JsonProperty("next_review_date")
   private Long nextReviewDate;
-
-  @JsonProperty("reviews_available_next_hour")
   private Integer reviewsAvailableNextHour;
-
-  @JsonProperty("reviews_available_next_day")
   private Integer reviewsAvailableNextDay;
 
   public StudyQueue() {

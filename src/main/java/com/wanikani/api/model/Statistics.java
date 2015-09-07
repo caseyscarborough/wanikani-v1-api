@@ -1,53 +1,22 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Statistics {
 
   private String srs;
-
-  @JsonProperty("srs_numeric")
   private Integer srsNumeric;
-
-  @JsonProperty("unlocked_date")
   private Long unlockedDate;
-
-  @JsonProperty("available_date")
   private Long availableDate;
-
   private Boolean burned;
-
-  @JsonProperty("burned_date")
   private Long burnedDate;
-
-  @JsonProperty("meaning_correct")
   private Integer meaningCorrect;
-
-  @JsonProperty("meaning_incorrect")
   private Integer meaningIncorrect;
-
-  @JsonProperty("meaning_max_streak")
   private Integer meaningMaxStreak;
-
-  @JsonProperty("meaning_current_streak")
   private Integer meaningCurrentStreak;
-
-  @JsonProperty("reading_correct")
   private Integer readingCorrect;
-
-  @JsonProperty("reading_incorrect")
   private Integer readingIncorrect;
-
-  @JsonProperty("reading_max_streak")
   private Integer readingMaxStreak;
-
-  @JsonProperty("reading_current_streak")
   private Integer readingCurrentStreak;
-
-  @JsonProperty("meaning_note")
   private String meaningNote;
-
-  @JsonProperty("user_synonyms")
   private String userSynonyms;
 
   public Statistics() {

@@ -1,15 +1,11 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Radical {
 
   private String character;
   private String meaning;
   private String image;
   private Integer level;
-
-  @JsonProperty("user_specific")
   private Statistics statistics;
 
   public Radical() {

@@ -1,7 +1,5 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Item {
 
   private String type;
@@ -10,14 +8,9 @@ public class Item {
   private String onyomi;
   private String kunyomi;
   private String nanori;
-
-  @JsonProperty("important_reading")
   private String importantReading;
-
   private String meaning;
   private Integer level;
-
-  @JsonProperty("unlocked_date")
   private Long unlockedDate;
 
   public Item() {

@@ -1,40 +1,17 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class UserInformation {
 
-  @JsonProperty("username")
   private String username;
-
-  @JsonProperty("gravatar")
   private String gravatar;
-
-  @JsonProperty("level")
   private Integer level;
-
-  @JsonProperty("title")
   private String title;
-
-  @JsonProperty("about")
   private String about;
-
-  @JsonProperty("website")
   private String website;
-
-  @JsonProperty("twitter")
   private String twitter;
-
-  @JsonProperty("topics_count")
   private Integer topicsCount;
-
-  @JsonProperty("posts_count")
   private Integer postsCount;
-
-  @JsonProperty("creation_date")
   private Long creationDate;
-
-  @JsonProperty("vacation_date")
   private Long vacationDate;
 
   public UserInformation() {
