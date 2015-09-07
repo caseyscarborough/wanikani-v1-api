@@ -2,6 +2,27 @@
 
 This repository contains the Java client for the [WaniKani API](https://www.wanikani.com/api).
 
+## Getting the Library
+
+Add the following to your pom.xml file:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.caseyscarborough</groupId>
+        <artifactId>wanikani-api</artifactId>
+        <version>master</version>
+    </dependency>
+</dependencies>
+```
+
 ## Usage
 
 ```java
