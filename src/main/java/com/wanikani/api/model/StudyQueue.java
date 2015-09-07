@@ -1,12 +1,19 @@
 package com.wanikani.api.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.wanikani.api.json.LongToDateDeserializer;
+
+import java.util.Date;
+
 public class StudyQueue {
 
   private Integer lessonsAvailable;
   private Integer reviewsAvailable;
-  private Long nextReviewDate;
   private Integer reviewsAvailableNextHour;
   private Integer reviewsAvailableNextDay;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date nextReviewDate;
 
   public StudyQueue() {
   }
@@ -27,11 +34,11 @@ public class StudyQueue {
     this.reviewsAvailable = reviewsAvailable;
   }
 
-  public Long getNextReviewDate() {
+  public Date getNextReviewDate() {
     return nextReviewDate;
   }
 
-  public void setNextReviewDate(Long nextReviewDate) {
+  public void setNextReviewDate(Date nextReviewDate) {
     this.nextReviewDate = nextReviewDate;
   }
 

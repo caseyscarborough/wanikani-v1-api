@@ -1,5 +1,10 @@
 package com.wanikani.api.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.wanikani.api.json.LongToDateDeserializer;
+
+import java.util.Date;
+
 public class UserInformation {
 
   private String username;
@@ -11,8 +16,12 @@ public class UserInformation {
   private String twitter;
   private Integer topicsCount;
   private Integer postsCount;
-  private Long creationDate;
-  private Long vacationDate;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date creationDate;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date vacationDate;
 
   public UserInformation() {
   }
@@ -89,19 +98,19 @@ public class UserInformation {
     this.postsCount = postsCount;
   }
 
-  public Long getCreationDate() {
+  public Date getCreationDate() {
     return creationDate;
   }
 
-  public void setCreationDate(Long creationDate) {
+  public void setCreationDate(Date creationDate) {
     this.creationDate = creationDate;
   }
 
-  public Long getVacationDate() {
+  public Date getVacationDate() {
     return vacationDate;
   }
 
-  public void setVacationDate(Long vacationDate) {
+  public void setVacationDate(Date vacationDate) {
     this.vacationDate = vacationDate;
   }
 

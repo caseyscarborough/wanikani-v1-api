@@ -1,13 +1,15 @@
 package com.wanikani.api.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.wanikani.api.json.LongToDateDeserializer;
+
+import java.util.Date;
+
 public class Statistics {
 
   private String srs;
   private Integer srsNumeric;
-  private Long unlockedDate;
-  private Long availableDate;
   private Boolean burned;
-  private Long burnedDate;
   private Integer meaningCorrect;
   private Integer meaningIncorrect;
   private Integer meaningMaxStreak;
@@ -18,6 +20,16 @@ public class Statistics {
   private Integer readingCurrentStreak;
   private String meaningNote;
   private String userSynonyms;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date unlockedDate;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date availableDate;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date burnedDate;
+
 
   public Statistics() {
   }
@@ -38,19 +50,19 @@ public class Statistics {
     this.srsNumeric = srsNumeric;
   }
 
-  public Long getUnlockedDate() {
+  public Date getUnlockedDate() {
     return unlockedDate;
   }
 
-  public void setUnlockedDate(Long unlockedDate) {
+  public void setUnlockedDate(Date unlockedDate) {
     this.unlockedDate = unlockedDate;
   }
 
-  public Long getAvailableDate() {
+  public Date getAvailableDate() {
     return availableDate;
   }
 
-  public void setAvailableDate(Long availableDate) {
+  public void setAvailableDate(Date availableDate) {
     this.availableDate = availableDate;
   }
 
@@ -62,11 +74,11 @@ public class Statistics {
     this.burned = burned;
   }
 
-  public Long getBurnedDate() {
+  public Date getBurnedDate() {
     return burnedDate;
   }
 
-  public void setBurnedDate(Long burnedDate) {
+  public void setBurnedDate(Date burnedDate) {
     this.burnedDate = burnedDate;
   }
 

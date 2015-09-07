@@ -1,5 +1,10 @@
 package com.wanikani.api.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.wanikani.api.json.LongToDateDeserializer;
+
+import java.util.Date;
+
 public class Item extends BaseItem {
 
   private String type;
@@ -8,7 +13,9 @@ public class Item extends BaseItem {
   private String kunyomi;
   private String nanori;
   private String importantReading;
-  private Long unlockedDate;
+
+  @JsonDeserialize(using = LongToDateDeserializer.class)
+  private Date unlockedDate;
 
   public Item() {
   }
@@ -61,11 +68,11 @@ public class Item extends BaseItem {
     this.importantReading = importantReading;
   }
 
-  public Long getUnlockedDate() {
+  public Date getUnlockedDate() {
     return unlockedDate;
   }
 
-  public void setUnlockedDate(Long unlockedDate) {
+  public void setUnlockedDate(Date unlockedDate) {
     this.unlockedDate = unlockedDate;
   }
 
