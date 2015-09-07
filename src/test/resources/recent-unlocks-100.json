@@ -1,0 +1,931 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": [
+    {
+      "type": "vocabulary",
+      "character": "才人",
+      "kana": "さいじん",
+      "meaning": "talented person, clever person",
+      "level": 2,
+      "unlocked_date": 1441550030
+    },
+    {
+      "type": "vocabulary",
+      "character": "〜才",
+      "kana": "さい",
+      "meaning": "years old, age",
+      "level": 2,
+      "unlocked_date": 1441550030
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸い",
+      "kana": "まるい",
+      "meaning": "circular, round, spherical",
+      "level": 2,
+      "unlocked_date": 1441458973
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸",
+      "kana": "まる",
+      "meaning": "circle, round, circular",
+      "level": 2,
+      "unlocked_date": 1441458973
+    },
+    {
+      "type": "kanji",
+      "character": "丁",
+      "meaning": "street",
+      "onyomi": "ちょう",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458967
+    },
+    {
+      "type": "vocabulary",
+      "character": "人々",
+      "kana": "ひとびと",
+      "meaning": "people, everybody, each person",
+      "level": 2,
+      "unlocked_date": 1441458942
+    },
+    {
+      "type": "vocabulary",
+      "character": "出口",
+      "kana": "でぐち",
+      "meaning": "exit",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "vocabulary",
+      "character": "出る",
+      "kana": "でる",
+      "meaning": "to exit, to leave",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "vocabulary",
+      "character": "出す",
+      "kana": "だす",
+      "meaning": "to remove, to hand over, to take out, to reveal",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "kanji",
+      "character": "立",
+      "meaning": "stand",
+      "onyomi": "りつ",
+      "kunyomi": "た.つ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458870
+    },
+    {
+      "type": "kanji",
+      "character": "夕",
+      "meaning": "evening",
+      "onyomi": "せき",
+      "kunyomi": "ゆう",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458730
+    },
+    {
+      "type": "vocabulary",
+      "character": "木",
+      "kana": "き",
+      "meaning": "tree, wood",
+      "level": 2,
+      "unlocked_date": 1441458330
+    },
+    {
+      "type": "kanji",
+      "character": "文",
+      "meaning": "writing, sentence",
+      "onyomi": "ぶん, もん",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458316
+    },
+    {
+      "type": "kanji",
+      "character": "田",
+      "meaning": "rice paddy, rice field, field",
+      "onyomi": "でん",
+      "kunyomi": "た",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458276
+    },
+    {
+      "type": "kanji",
+      "character": "左",
+      "meaning": "left",
+      "onyomi": "さ",
+      "kunyomi": "ひだり",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458271
+    },
+    {
+      "type": "kanji",
+      "character": "右",
+      "meaning": "right",
+      "onyomi": "う, ゆう",
+      "kunyomi": "みぎ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458271
+    },
+    {
+      "type": "kanji",
+      "character": "土",
+      "meaning": "soil, earth, ground, dirt",
+      "onyomi": "ど, と",
+      "kunyomi": "つち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458253
+    },
+    {
+      "type": "vocabulary",
+      "character": "日",
+      "kana": "ひ",
+      "meaning": "sun, day",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "九日",
+      "kana": "ここのか",
+      "meaning": "nine days, day nine, ninth day",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "三日",
+      "kana": "みっか",
+      "meaning": "third day, day three, three days",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "十日",
+      "kana": "とおか",
+      "meaning": "ten days, day ten, tenth day",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "七日",
+      "kana": "なのか",
+      "meaning": "seventh day, day seven, seven days",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "一日",
+      "kana": "いちにち, ついたち",
+      "meaning": "one day, day one, first day",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "二日",
+      "kana": "ふつか",
+      "meaning": "second day, day two, two days",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "vocabulary",
+      "character": "八日",
+      "kana": "ようか",
+      "meaning": "eight days, day eight, eighth day",
+      "level": 2,
+      "unlocked_date": 1441458251
+    },
+    {
+      "type": "kanji",
+      "character": "目",
+      "meaning": "eye",
+      "onyomi": "もく",
+      "kunyomi": "め",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458230
+    },
+    {
+      "type": "kanji",
+      "character": "白",
+      "meaning": "white",
+      "onyomi": "はく",
+      "kunyomi": "しろ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458222
+    },
+    {
+      "type": "kanji",
+      "character": "千",
+      "meaning": "thousand",
+      "onyomi": "せん",
+      "kunyomi": "ち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458206
+    },
+    {
+      "type": "kanji",
+      "character": "五",
+      "meaning": "five",
+      "onyomi": "ご",
+      "kunyomi": "いつ.つ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365203
+    },
+    {
+      "type": "kanji",
+      "character": "子",
+      "meaning": "child, kid",
+      "onyomi": "し, す",
+      "kunyomi": "こ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365186
+    },
+    {
+      "type": "kanji",
+      "character": "本",
+      "meaning": "book, origin, real, main",
+      "onyomi": "ほん",
+      "kunyomi": "もと",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365185
+    },
+    {
+      "type": "kanji",
+      "character": "月",
+      "meaning": "moon, month",
+      "onyomi": "げつ, がつ",
+      "kunyomi": "つき",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365184
+    },
+    {
+      "type": "kanji",
+      "character": "四",
+      "meaning": "four",
+      "onyomi": "し",
+      "kunyomi": "よん, よ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365176
+    },
+    {
+      "type": "kanji",
+      "character": "中",
+      "meaning": "middle, in, inside, center",
+      "onyomi": "ちゅう",
+      "kunyomi": "なか",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365173
+    },
+    {
+      "type": "kanji",
+      "character": "石",
+      "meaning": "stone",
+      "onyomi": "せき",
+      "kunyomi": "いし",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365171
+    },
+    {
+      "type": "kanji",
+      "character": "手",
+      "meaning": "hand",
+      "onyomi": "しゅ",
+      "kunyomi": "て",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365164
+    },
+    {
+      "type": "kanji",
+      "character": "円",
+      "meaning": "yen, round, circle",
+      "onyomi": "えん",
+      "kunyomi": "まる.い",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365160
+    },
+    {
+      "type": "kanji",
+      "character": "犬",
+      "meaning": "dog",
+      "onyomi": "けん",
+      "kunyomi": "いぬ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365158
+    },
+    {
+      "type": "kanji",
+      "character": "玉",
+      "meaning": "ball",
+      "onyomi": null,
+      "kunyomi": "たま",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365155
+    },
+    {
+      "type": "kanji",
+      "character": "王",
+      "meaning": "king",
+      "onyomi": "おう",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365155
+    },
+    {
+      "type": "kanji",
+      "character": "水",
+      "meaning": "water",
+      "onyomi": "すい",
+      "kunyomi": "みず",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365153
+    },
+    {
+      "type": "kanji",
+      "character": "又",
+      "meaning": "again",
+      "onyomi": null,
+      "kunyomi": "また",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441365149
+    },
+    {
+      "type": "kanji",
+      "character": "正",
+      "meaning": "correct",
+      "onyomi": "せい, しょう",
+      "kunyomi": "ただ.しい",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365147
+    },
+    {
+      "type": "kanji",
+      "character": "小",
+      "meaning": "small, little",
+      "onyomi": "しょう",
+      "kunyomi": "ちい.さい, こ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365144
+    },
+    {
+      "type": "kanji",
+      "character": "刀",
+      "meaning": "katana, sword",
+      "onyomi": "とう",
+      "kunyomi": "かたな",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365039
+    },
+    {
+      "type": "kanji",
+      "character": "火",
+      "meaning": "fire",
+      "onyomi": "か",
+      "kunyomi": "ひ, ほ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441365038
+    },
+    {
+      "type": "kanji",
+      "character": "天",
+      "meaning": "heaven",
+      "onyomi": "てん",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441364982
+    },
+    {
+      "type": "vocabulary",
+      "character": "入り口",
+      "kana": "いりぐち",
+      "meaning": "entrance",
+      "level": 1,
+      "unlocked_date": 1441140617
+    },
+    {
+      "type": "vocabulary",
+      "character": "人口",
+      "kana": "じんこう",
+      "meaning": "population",
+      "level": 1,
+      "unlocked_date": 1441140617
+    },
+    {
+      "type": "vocabulary",
+      "character": "川口",
+      "kana": "かわぐち",
+      "meaning": "river mouth, estuary",
+      "level": 2,
+      "unlocked_date": 1441140617
+    },
+    {
+      "type": "vocabulary",
+      "character": "口",
+      "kana": "くち",
+      "meaning": "mouth",
+      "level": 1,
+      "unlocked_date": 1441140617
+    },
+    {
+      "type": "kanji",
+      "character": "丸",
+      "meaning": "circle, circular, round",
+      "onyomi": "がん",
+      "kunyomi": "まる",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "目",
+      "meaning": "eye",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "牛",
+      "meaning": "cow",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "火",
+      "meaning": "fire",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "白",
+      "meaning": "white",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "千",
+      "meaning": "thousand",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "刀",
+      "meaning": "sword",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "小",
+      "meaning": "small",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "止",
+      "meaning": "stop",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "又",
+      "meaning": "stool",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "々",
+      "meaning": "repeater, repetition, reduplication, iteration mark",
+      "onyomi": "のま",
+      "kunyomi": "のま",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "水",
+      "meaning": "water",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "尸",
+      "meaning": "flag",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "土",
+      "meaning": "grave",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "メ",
+      "meaning": "treasure",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "ナ",
+      "meaning": "narwhal",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "田",
+      "meaning": "rice-paddy",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "文",
+      "meaning": "doll",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "王",
+      "meaning": "king",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "vocabulary",
+      "character": "十",
+      "kana": "じゅう",
+      "meaning": "ten",
+      "level": 1,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "彡",
+      "meaning": "hair",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "夕",
+      "meaning": "evening",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "出",
+      "meaning": "exit",
+      "onyomi": "しゅつ",
+      "kunyomi": "で.る, だ.す",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "ム",
+      "meaning": "pile",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "犬",
+      "meaning": "dog",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "冂",
+      "meaning": "head",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "手",
+      "meaning": "hand",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "木",
+      "meaning": "tree, wood",
+      "onyomi": "もく",
+      "kunyomi": "き",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "石",
+      "meaning": "stone",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "日",
+      "meaning": "sun, day",
+      "onyomi": "にち, じつ",
+      "kunyomi": "ひ, か",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "中",
+      "meaning": "middle",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "弓",
+      "meaning": "spring",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "儿",
+      "meaning": "legs",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "本",
+      "meaning": "real",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "天",
+      "meaning": "heaven",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "月",
+      "meaning": "moon",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "子",
+      "meaning": "child",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "才",
+      "meaning": "genius",
+      "onyomi": "さい",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "五",
+      "meaning": "five",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "vocabulary",
+      "character": "大いに",
+      "kana": "おおいに",
+      "meaning": "very, much, greatly, a lot of, very much",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "了",
+      "meaning": "finish, complete, end",
+      "onyomi": "りょう",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "丁",
+      "meaning": "nail",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "radical",
+      "character": "立",
+      "meaning": "stand",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "kanji",
+      "character": "六",
+      "meaning": "six",
+      "onyomi": "ろく",
+      "kunyomi": "む.つ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441056015
+    },
+    {
+      "type": "vocabulary",
+      "character": "女",
+      "kana": "おんな",
+      "meaning": "woman, female",
+      "level": 1,
+      "unlocked_date": 1441046283
+    },
+    {
+      "type": "vocabulary",
+      "character": "大きさ",
+      "kana": "おおきさ",
+      "meaning": "size",
+      "level": 1,
+      "unlocked_date": 1440822141
+    },
+    {
+      "type": "vocabulary",
+      "character": "大した",
+      "kana": "たいした",
+      "meaning": "considerable, great, important, big deal",
+      "level": 1,
+      "unlocked_date": 1440822141
+    },
+    {
+      "type": "vocabulary",
+      "character": "大人",
+      "kana": "おとな",
+      "meaning": "adult",
+      "level": 1,
+      "unlocked_date": 1440822141
+    },
+    {
+      "type": "vocabulary",
+      "character": "大きい",
+      "kana": "おおきい",
+      "meaning": "big, large",
+      "level": 1,
+      "unlocked_date": 1440822140
+    }
+  ]
+}

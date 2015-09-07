@@ -7,10 +7,13 @@
     "about": "",
     "website": null,
     "twitter": "",
-    "topics_count": 23,
-    "posts_count": 1,
+    "topics_count": 0,
+    "posts_count": 0,
     "creation_date": 1439205754,
     "vacation_date": null
   },
-  "requested_information": null
+  "error": {
+    "code": "invalid_arguments",
+    "message": "Levels requested invalid."
+  }
 }

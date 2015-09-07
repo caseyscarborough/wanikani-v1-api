@@ -1,9 +1,12 @@
 package com.wanikani.api;
 
 import com.wanikani.api.config.Configuration;
+import com.wanikani.api.exception.WaniKaniException;
 import com.wanikani.api.model.*;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.util.Date;
 import java.util.List;
@@ -14,9 +17,27 @@ public class WaniKaniClientTest {
 
   private WaniKaniClient client;
 
+  @Rule
+  public ExpectedException expectedException = ExpectedException.none();
+
   @Before
   public void setUp() {
-    client = new MockWaniKaniClient("test-api-key");
+    client = new WaniKaniClient("api-key");
+    client.setClient(new MockHttpClient());
+  }
+
+  @Test
+  public void testClientCreationThrowsExceptionWhenApiKeyIsNull() {
+    expectedException.expect(WaniKaniException.class);
+    expectedException.expectMessage("An API key is required to make requests to the API. Get your API key at https://www.wanikani.com/account.");
+    client = new WaniKaniClient(null);
+  }
+
+  @Test
+  public void testWhenUserDoesntExist() {
+    expectedException.expect(WaniKaniException.class);
+    expectedException.expectMessage("User does not exist.");
+    client.getKanji(24);
   }
 
   @Test
@@ -26,6 +47,13 @@ public class WaniKaniClientTest {
     assertEquals(Configuration.GRAVATAR_BASE_URL + info.getGravatar(), info.getGravatarUrl());
     assertEquals(new Date(1439205754000L), info.getCreationDate());
     assertEquals(null, info.getVacationDate());
+    assertEquals("", info.getTwitter());
+    assertEquals(null, info.getWebsite());
+    assertEquals(23, info.getTopicsCount());
+    assertEquals(1, info.getPostsCount());
+    assertEquals("", info.getAbout());
+    assertEquals(2, info.getLevel());
+    assertEquals("Turtles", info.getTitle());
     assertFalse(info.isInVacationMode());
   }
 
@@ -53,6 +81,8 @@ public class WaniKaniClientTest {
     SrsDistribution srs = client.getSrsDistribution();
     assertEquals(0, srs.getApprentice().getRadicals());
     assertEquals(60, srs.getGuru().getRadicals());
+    assertEquals(23, srs.getGuru().getKanji());
+    assertEquals(0, srs.getBurned().getVocabulary());
     assertEquals(125, srs.getGuru().getTotal());
   }
 
@@ -82,6 +112,18 @@ public class WaniKaniClientTest {
     assertEquals("years old, age", first.getMeaning());
     assertEquals(2, first.getLevel());
     assertEquals(new Date(1441550030000L), first.getUnlockedDate());
+  }
+
+  @Test
+  public void testRecentUnlocksWhenLimitIsAboveTheMaximum() {
+    List<Item> items = client.getRecentUnlocks(300);
+    assertEquals(Configuration.RECENT_UNLOCKS_MAX_LIMIT, items.size());
+  }
+
+  @Test
+  public void testRecentUnlocksWhenLimitIsBelowMinimum() {
+    List<Item> items = client.getRecentUnlocks(-20);
+    assertEquals(Configuration.RECENT_UNLOCKS_MIN_LIMIT, items.size());
   }
 
   @Test
@@ -130,6 +172,13 @@ public class WaniKaniClientTest {
   }
 
   @Test
+  public void testGetRadicalsWithInvalidLevel() {
+    expectedException.expect(WaniKaniException.class);
+    expectedException.expectMessage("Levels requested invalid.");
+    client.getRadicals(123);
+  }
+
+  @Test
   public void testGetKanjiAtLevel1And2() {
     List<Kanji> kanji = client.getKanji(1, 2);
     assertEquals(56, kanji.size());
@@ -138,7 +187,9 @@ public class WaniKaniClientTest {
     assertEquals("口", first.getCharacter());
     assertEquals("こう, く", first.getOnyomi());
     assertEquals("くち", first.getKunyomi());
+    assertEquals("onyomi", first.getImportantReading());
     assertNull(first.getNanori());
+    assertTrue(first.isUnlocked());
   }
 
   @Test
@@ -152,6 +203,19 @@ public class WaniKaniClientTest {
     assertNull(last.getStatistics());
     assertFalse(last.isUnlocked());
     assertEquals(Configuration.VOCABULARY_BASE_URL + last.getCharacter(), last.getInformationUrl());
+  }
+
+  @Test
+  public void testGetVocabularyWithNoLevelSpecified() {
+    List<Vocabulary> vocabulary = client.getVocabulary();
+    assertEquals(132, vocabulary.size());
+  }
+
+  @Test
+  public void testGetVocabularyWithInvalidLevel() {
+    expectedException.expect(WaniKaniException.class);
+    expectedException.expectMessage("Levels requested invalid.");
+    client.getVocabulary(100);
   }
 
 

@@ -1,16 +1,11 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-public class Kanji extends BaseItem {
+public class Kanji extends StatisticsItem {
 
   private String onyomi;
   private String kunyomi;
   private String nanori;
   private String importantReading;
-
-  @JsonProperty("user_specific")
-  private Statistics statistics;
 
   public Kanji() {
     this.type = ItemType.KANJI;
@@ -48,19 +43,6 @@ public class Kanji extends BaseItem {
     this.importantReading = importantReading;
   }
 
-  public Statistics getStatistics() {
-    return statistics;
-  }
-
-  public void setStatistics(Statistics statistics) {
-    this.statistics = statistics;
-  }
-
-
-  public boolean isUnlocked() {
-    return statistics != null;
-  }
-
   @Override
   public String toString() {
     return "Kanji{" +
@@ -68,7 +50,6 @@ public class Kanji extends BaseItem {
         ", kunyomi='" + kunyomi + '\'' +
         ", nanori='" + nanori + '\'' +
         ", importantReading='" + importantReading + '\'' +
-        ", statistics=" + statistics +
         "} " + super.toString();
   }
 }

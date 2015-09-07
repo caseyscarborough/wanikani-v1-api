@@ -5,24 +5,20 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.wanikani.api.config.Configuration;
 import com.wanikani.api.exception.WaniKaniException;
+import com.wanikani.api.http.HttpClient;
 import com.wanikani.api.json.ObjectMapperFactory;
 import com.wanikani.api.model.*;
 import com.wanikani.api.model.Error;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * The main class for interacting with the WaniKani API.
- *
+ * <p/>
  * Usage:
- *
+ * <p/>
  * <pre>
  * {@code
  * WaniKaniClient client = new WaniKaniClient("your-api-key");
@@ -38,20 +34,20 @@ public class WaniKaniClient {
    * The user's API key. Required for calls to the API.
    */
   private String apiKey;
+  private HttpClient client;
 
   public WaniKaniClient(String apiKey) {
     if (apiKey == null || apiKey.trim().isEmpty()) {
-      throw new RuntimeException("An API key is required to make requests to the API. Get your API key at https://www.wanikani.com/account.");
+      throw new WaniKaniException("An API key is required to make requests to the API. Get your API key at https://www.wanikani.com/account.");
     }
     this.apiKey = apiKey;
+    this.client = new HttpClient();
   }
 
-  private String getBaseUrl() {
-    return Configuration.API_BASE_URL + "/user/" + apiKey + "/";
-  }
 
   /**
    * Retrieves information about the user associated with the API key.
+   *
    * @return The user's information
    */
   public UserInformation getUserInformation() {
@@ -60,6 +56,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves information about the user's current study queue.
+   *
    * @return The study queue information
    */
   public StudyQueue getStudyQueue() {
@@ -68,6 +65,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves the user's current level radical and kanji progression.
+   *
    * @return The user's current level progression
    */
   public LevelProgression getLevelProgression() {
@@ -76,6 +74,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves information about the user's current SRS Distribution.
+   *
    * @return The user's current SRS Distribution.
    */
   public SrsDistribution getSrsDistribution() {
@@ -84,6 +83,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves the user's recently unlocked items, with the default limit of ten.
+   *
    * @return The list of recently unlocked items.
    */
   public List<Item> getRecentUnlocks() {
@@ -92,6 +92,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves the user's recently unlocked items.
+   *
    * @param limit the number of items to retrieve, minimum of 1, maximum of 100.
    * @return The list of recently unlocked items.
    */
@@ -111,6 +112,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves the user's critical items below 75%.
+   *
    * @return The list of critical items.
    */
   public List<CriticalItem> getCriticalItems() {
@@ -119,6 +121,7 @@ public class WaniKaniClient {
 
   /**
    * Retrieves the user's critical items below a given percentage.
+   *
    * @param maximumPercentage The maximum percentage to retrieve items for.
    * @return The list of critical items.
    */
@@ -140,10 +143,11 @@ public class WaniKaniClient {
    * Retrieves a list of radicals. No parameters will retrieve all of the user's
    * currently unlocked radicals. Any number of levels may be passed in to retrieve
    * radicals from those levels.
+   *
    * @param levels The levels to retrieve radicals for, omit for just the user's unlocked radicals.
    * @return The list of radicals.
    */
-  public List<Radical> getRadicals(int ... levels) {
+  public List<Radical> getRadicals(int... levels) {
     String endpoint = "radicals";
     if (levels.length > 0) {
       endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
@@ -155,10 +159,11 @@ public class WaniKaniClient {
    * Retrieves a list of kanji. No parameters will retrieve all of the user's
    * currently unlocked kanji. Any number of levels may be passed in to retrieve
    * kanji from those levels.
+   *
    * @param levels The levels to retrieve kanji for, omit for just the user's unlocked kanji.
    * @return The list of kanji.
    */
-  public List<Kanji> getKanji(int ... levels) {
+  public List<Kanji> getKanji(int... levels) {
     String endpoint = "kanji";
     if (levels.length > 0) {
       endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
@@ -170,10 +175,11 @@ public class WaniKaniClient {
    * Retrieves a list of vocabulary. No parameters will retrieve all of the user's
    * currently unlocked vocabulary. Any number of levels may be passed in to retrieve
    * vocabulary from those levels.
+   *
    * @param levels The levels to retrieve vocabulary for, omit for just the user's unlocked vocabulary.
    * @return The list of vocabulary.
    */
-  public List<Vocabulary> getVocabulary(int ... levels) {
+  public List<Vocabulary> getVocabulary(int... levels) {
     if (levels.length == 0) {
       return request("vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
     }
@@ -181,21 +187,19 @@ public class WaniKaniClient {
     return request("vocabulary/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", ""), new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
   }
 
-  protected  <T extends Response> T request(String endpoint, TypeReference<T> reference) throws WaniKaniException {
+  public void setClient(HttpClient client) {
+    this.client = client;
+  }
+
+  private String getBaseUrl() {
+    return Configuration.API_BASE_URL + "/user/" + apiKey + "/";
+  }
+
+  protected <T extends Response> T request(String endpoint, TypeReference<T> reference) throws WaniKaniException {
     String url = getBaseUrl() + endpoint;
     try {
-      URL obj = new URL(url);
-      HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
-      connection.setRequestMethod("GET");
-      BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-      String inputLine;
-      StringBuilder response = new StringBuilder();
-
-      while ((inputLine = in.readLine()) != null) {
-        response.append(inputLine);
-      }
-      in.close();
-      T output = new ObjectMapperFactory().getInstance().readValue(response.toString(), reference);
+      String response = client.request(url);
+      T output = new ObjectMapperFactory().getInstance().readValue(response, reference);
       if (output.getError() != null) {
         Error error = output.getError();
         throw new WaniKaniException(error.getCode(), error.getMessage());
@@ -205,10 +209,8 @@ public class WaniKaniClient {
       throw new WaniKaniException("An error occurred parsing JSON. The input structure did not match the structure expected for the result type.", e);
     } catch (JsonParseException e) {
       throw new WaniKaniException("An error occurred parsing JSON with invalid format.", e);
-    } catch (MalformedURLException e) {
-      throw new WaniKaniException("URL was malformed: " + url, e);
     } catch (IOException e) {
-      throw new WaniKaniException("An IO error occurred while performing request.", e);
+      throw new WaniKaniException("An IO error occurred parsing JSON.", e);
     }
   }
 }

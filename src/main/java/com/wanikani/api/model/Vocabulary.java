@@ -1,13 +1,8 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-public class Vocabulary extends BaseItem {
+public class Vocabulary extends StatisticsItem {
 
   private String kana;
-
-  @JsonProperty("user_specific")
-  private Statistics statistics;
 
   public Vocabulary() {
     this.type = ItemType.VOCABULARY;
@@ -21,23 +16,10 @@ public class Vocabulary extends BaseItem {
     this.kana = kana;
   }
 
-  public Statistics getStatistics() {
-    return statistics;
-  }
-
-  public void setStatistics(Statistics statistics) {
-    this.statistics = statistics;
-  }
-
-  public boolean isUnlocked() {
-    return statistics != null;
-  }
-
   @Override
   public String toString() {
     return "Vocabulary{" +
         "kana='" + kana + '\'' +
-        ", statistics=" + statistics +
         "} " + super.toString();
   }
 }
