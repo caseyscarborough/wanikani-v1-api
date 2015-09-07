@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.wanikani.api.json.LongToDateDeserializer;
 
 import java.util.Date;
+import java.util.List;
 
 public class Statistics {
 
@@ -19,7 +20,7 @@ public class Statistics {
   private Integer readingMaxStreak;
   private Integer readingCurrentStreak;
   private String meaningNote;
-  private String userSynonyms;
+  private List<String> userSynonyms;
 
   @JsonDeserialize(using = LongToDateDeserializer.class)
   private Date unlockedDate;
@@ -154,11 +155,11 @@ public class Statistics {
     this.meaningNote = meaningNote;
   }
 
-  public String getUserSynonyms() {
+  public List<String> getUserSynonyms() {
     return userSynonyms;
   }
 
-  public void setUserSynonyms(String userSynonyms) {
+  public void setUserSynonyms(List<String> userSynonyms) {
     this.userSynonyms = userSynonyms;
   }
 
