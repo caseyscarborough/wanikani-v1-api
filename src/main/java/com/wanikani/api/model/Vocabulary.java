@@ -34,7 +34,7 @@ public class Vocabulary extends BaseItem {
   }
 
   public String getInformationUrl() {
-    return Configuration.VOCABULARY_URL + character;
+    return Configuration.VOCABULARY_BASE_URL + character;
   }
 
   @Override

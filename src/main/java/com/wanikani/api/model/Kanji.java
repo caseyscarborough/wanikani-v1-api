@@ -62,7 +62,7 @@ public class Kanji extends BaseItem {
   }
 
   public String getInformationUrl() {
-    return Configuration.KANJI_URL + character;
+    return Configuration.KANJI_BASE_URL + character;
   }
 
   @Override

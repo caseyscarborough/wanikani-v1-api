@@ -35,7 +35,7 @@ public class Radical extends BaseItem {
   }
 
   public String getInformationUrl() {
-    return Configuration.RADICAL_URL + character;
+    return Configuration.RADICAL_BASE_URL + character;
   }
 
   @Override

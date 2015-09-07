@@ -1,6 +1,7 @@
 package com.wanikani.api.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.wanikani.api.config.Configuration;
 import com.wanikani.api.json.LongToDateDeserializer;
 
 import java.util.Date;
@@ -112,6 +113,14 @@ public class UserInformation {
 
   public void setVacationDate(Date vacationDate) {
     this.vacationDate = vacationDate;
+  }
+
+  public boolean isInVacationMode() {
+    return vacationDate != null;
+  }
+
+  public String getGravatarUrl() {
+    return Configuration.GRAVATAR_BASE_URL + gravatar;
   }
 
   @Override
