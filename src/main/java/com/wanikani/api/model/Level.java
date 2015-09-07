@@ -2,43 +2,43 @@ package com.wanikani.api.model;
 
 public class Level {
 
-  private Integer radicals;
-  private Integer kanji;
-  private Integer vocabulary;
-  private Integer total;
+  private int radicals;
+  private int kanji;
+  private int vocabulary;
+  private int total;
 
   public Level() {
   }
 
-  public Integer getRadicals() {
+  public int getRadicals() {
     return radicals;
   }
 
-  public void setRadicals(Integer radicals) {
+  public void setRadicals(int radicals) {
     this.radicals = radicals;
   }
 
-  public Integer getKanji() {
+  public int getKanji() {
     return kanji;
   }
 
-  public void setKanji(Integer kanji) {
+  public void setKanji(int kanji) {
     this.kanji = kanji;
   }
 
-  public Integer getVocabulary() {
+  public int getVocabulary() {
     return vocabulary;
   }
 
-  public void setVocabulary(Integer vocabulary) {
+  public void setVocabulary(int vocabulary) {
     this.vocabulary = vocabulary;
   }
 
-  public Integer getTotal() {
+  public int getTotal() {
     return total;
   }
 
-  public void setTotal(Integer total) {
+  public void setTotal(int total) {
     this.total = total;
   }
 

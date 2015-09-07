@@ -7,10 +7,10 @@ import java.util.Date;
 
 public class StudyQueue {
 
-  private Integer lessonsAvailable;
-  private Integer reviewsAvailable;
-  private Integer reviewsAvailableNextHour;
-  private Integer reviewsAvailableNextDay;
+  private int lessonsAvailable;
+  private int reviewsAvailable;
+  private int reviewsAvailableNextHour;
+  private int reviewsAvailableNextDay;
 
   @JsonDeserialize(using = LongToDateDeserializer.class)
   private Date nextReviewDate;
@@ -18,19 +18,19 @@ public class StudyQueue {
   public StudyQueue() {
   }
 
-  public Integer getLessonsAvailable() {
+  public int getLessonsAvailable() {
     return lessonsAvailable;
   }
 
-  public void setLessonsAvailable(Integer lessonsAvailable) {
+  public void setLessonsAvailable(int lessonsAvailable) {
     this.lessonsAvailable = lessonsAvailable;
   }
 
-  public Integer getReviewsAvailable() {
+  public int getReviewsAvailable() {
     return reviewsAvailable;
   }
 
-  public void setReviewsAvailable(Integer reviewsAvailable) {
+  public void setReviewsAvailable(int reviewsAvailable) {
     this.reviewsAvailable = reviewsAvailable;
   }
 
@@ -42,19 +42,19 @@ public class StudyQueue {
     this.nextReviewDate = nextReviewDate;
   }
 
-  public Integer getReviewsAvailableNextHour() {
+  public int getReviewsAvailableNextHour() {
     return reviewsAvailableNextHour;
   }
 
-  public void setReviewsAvailableNextHour(Integer reviewsAvailableNextHour) {
+  public void setReviewsAvailableNextHour(int reviewsAvailableNextHour) {
     this.reviewsAvailableNextHour = reviewsAvailableNextHour;
   }
 
-  public Integer getReviewsAvailableNextDay() {
+  public int getReviewsAvailableNextDay() {
     return reviewsAvailableNextDay;
   }
 
-  public void setReviewsAvailableNextDay(Integer reviewsAvailableNextDay) {
+  public void setReviewsAvailableNextDay(int reviewsAvailableNextDay) {
     this.reviewsAvailableNextDay = reviewsAvailableNextDay;
   }
 

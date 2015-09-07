@@ -3,7 +3,7 @@ package com.wanikani.api.model;
 public abstract class BaseItem {
 
   protected String character;
-  protected String level;
+  protected int level;
   protected String meaning;
 
   public BaseItem() {
@@ -17,11 +17,11 @@ public abstract class BaseItem {
     this.character = character;
   }
 
-  public String getLevel() {
+  public int getLevel() {
     return level;
   }
 
-  public void setLevel(String level) {
+  public void setLevel(int level) {
     this.level = level;
   }
 

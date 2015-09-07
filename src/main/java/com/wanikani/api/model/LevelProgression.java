@@ -2,43 +2,43 @@ package com.wanikani.api.model;
 
 public class LevelProgression {
 
-  private Integer radicalsProgress;
-  private Integer radicalsTotal;
-  private Integer kanjiProgress;
-  private Integer kanjiTotal;
+  private int radicalsProgress;
+  private int radicalsTotal;
+  private int kanjiProgress;
+  private int kanjiTotal;
 
   public LevelProgression() {
   }
 
-  public Integer getRadicalsProgress() {
+  public int getRadicalsProgress() {
     return radicalsProgress;
   }
 
-  public void setRadicalsProgress(Integer radicalsProgress) {
+  public void setRadicalsProgress(int radicalsProgress) {
     this.radicalsProgress = radicalsProgress;
   }
 
-  public Integer getRadicalsTotal() {
+  public int getRadicalsTotal() {
     return radicalsTotal;
   }
 
-  public void setRadicalsTotal(Integer radicalsTotal) {
+  public void setRadicalsTotal(int radicalsTotal) {
     this.radicalsTotal = radicalsTotal;
   }
 
-  public Integer getKanjiProgress() {
+  public int getKanjiProgress() {
     return kanjiProgress;
   }
 
-  public void setKanjiProgress(Integer kanjiProgress) {
+  public void setKanjiProgress(int kanjiProgress) {
     this.kanjiProgress = kanjiProgress;
   }
 
-  public Integer getKanjiTotal() {
+  public int getKanjiTotal() {
     return kanjiTotal;
   }
 
-  public void setKanjiTotal(Integer kanjiTotal) {
+  public void setKanjiTotal(int kanjiTotal) {
     this.kanjiTotal = kanjiTotal;
   }
 

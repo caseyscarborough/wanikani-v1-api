@@ -10,13 +10,13 @@ public class UserInformation {
 
   private String username;
   private String gravatar;
-  private Integer level;
+  private int level;
   private String title;
   private String about;
   private String website;
   private String twitter;
-  private Integer topicsCount;
-  private Integer postsCount;
+  private int topicsCount;
+  private int postsCount;
 
   @JsonDeserialize(using = LongToDateDeserializer.class)
   private Date creationDate;
@@ -43,11 +43,11 @@ public class UserInformation {
     this.gravatar = gravatar;
   }
 
-  public Integer getLevel() {
+  public int getLevel() {
     return level;
   }
 
-  public void setLevel(Integer level) {
+  public void setLevel(int level) {
     this.level = level;
   }
 
@@ -83,19 +83,19 @@ public class UserInformation {
     this.twitter = twitter;
   }
 
-  public Integer getTopicsCount() {
+  public int getTopicsCount() {
     return topicsCount;
   }
 
-  public void setTopicsCount(Integer topicsCount) {
+  public void setTopicsCount(int topicsCount) {
     this.topicsCount = topicsCount;
   }
 
-  public Integer getPostsCount() {
+  public int getPostsCount() {
     return postsCount;
   }
 
-  public void setPostsCount(Integer postsCount) {
+  public void setPostsCount(int postsCount) {
     this.postsCount = postsCount;
   }
 

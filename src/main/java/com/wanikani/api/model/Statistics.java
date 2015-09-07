@@ -9,16 +9,16 @@ import java.util.List;
 public class Statistics {
 
   private String srs;
-  private Integer srsNumeric;
-  private Boolean burned;
-  private Integer meaningCorrect;
-  private Integer meaningIncorrect;
-  private Integer meaningMaxStreak;
-  private Integer meaningCurrentStreak;
-  private Integer readingCorrect;
-  private Integer readingIncorrect;
-  private Integer readingMaxStreak;
-  private Integer readingCurrentStreak;
+  private int srsNumeric;
+  private boolean burned;
+  private int meaningCorrect;
+  private int meaningIncorrect;
+  private int meaningMaxStreak;
+  private int meaningCurrentStreak;
+  private int readingCorrect;
+  private int readingIncorrect;
+  private int readingMaxStreak;
+  private int readingCurrentStreak;
   private String meaningNote;
   private List<String> userSynonyms;
 
@@ -43,11 +43,11 @@ public class Statistics {
     this.srs = srs;
   }
 
-  public Integer getSrsNumeric() {
+  public int getSrsNumeric() {
     return srsNumeric;
   }
 
-  public void setSrsNumeric(Integer srsNumeric) {
+  public void setSrsNumeric(int srsNumeric) {
     this.srsNumeric = srsNumeric;
   }
 
@@ -67,11 +67,11 @@ public class Statistics {
     this.availableDate = availableDate;
   }
 
-  public Boolean getBurned() {
+  public boolean getBurned() {
     return burned;
   }
 
-  public void setBurned(Boolean burned) {
+  public void setBurned(boolean burned) {
     this.burned = burned;
   }
 
@@ -83,67 +83,67 @@ public class Statistics {
     this.burnedDate = burnedDate;
   }
 
-  public Integer getMeaningCorrect() {
+  public int getMeaningCorrect() {
     return meaningCorrect;
   }
 
-  public void setMeaningCorrect(Integer meaningCorrect) {
+  public void setMeaningCorrect(int meaningCorrect) {
     this.meaningCorrect = meaningCorrect;
   }
 
-  public Integer getMeaningIncorrect() {
+  public int getMeaningIncorrect() {
     return meaningIncorrect;
   }
 
-  public void setMeaningIncorrect(Integer meaningIncorrect) {
+  public void setMeaningIncorrect(int meaningIncorrect) {
     this.meaningIncorrect = meaningIncorrect;
   }
 
-  public Integer getMeaningMaxStreak() {
+  public int getMeaningMaxStreak() {
     return meaningMaxStreak;
   }
 
-  public void setMeaningMaxStreak(Integer meaningMaxStreak) {
+  public void setMeaningMaxStreak(int meaningMaxStreak) {
     this.meaningMaxStreak = meaningMaxStreak;
   }
 
-  public Integer getMeaningCurrentStreak() {
+  public int getMeaningCurrentStreak() {
     return meaningCurrentStreak;
   }
 
-  public void setMeaningCurrentStreak(Integer meaningCurrentStreak) {
+  public void setMeaningCurrentStreak(int meaningCurrentStreak) {
     this.meaningCurrentStreak = meaningCurrentStreak;
   }
 
-  public Integer getReadingCorrect() {
+  public int getReadingCorrect() {
     return readingCorrect;
   }
 
-  public void setReadingCorrect(Integer readingCorrect) {
+  public void setReadingCorrect(int readingCorrect) {
     this.readingCorrect = readingCorrect;
   }
 
-  public Integer getReadingIncorrect() {
+  public int getReadingIncorrect() {
     return readingIncorrect;
   }
 
-  public void setReadingIncorrect(Integer readingIncorrect) {
+  public void setReadingIncorrect(int readingIncorrect) {
     this.readingIncorrect = readingIncorrect;
   }
 
-  public Integer getReadingMaxStreak() {
+  public int getReadingMaxStreak() {
     return readingMaxStreak;
   }
 
-  public void setReadingMaxStreak(Integer readingMaxStreak) {
+  public void setReadingMaxStreak(int readingMaxStreak) {
     this.readingMaxStreak = readingMaxStreak;
   }
 
-  public Integer getReadingCurrentStreak() {
+  public int getReadingCurrentStreak() {
     return readingCurrentStreak;
   }
 
-  public void setReadingCurrentStreak(Integer readingCurrentStreak) {
+  public void setReadingCurrentStreak(int readingCurrentStreak) {
     this.readingCurrentStreak = readingCurrentStreak;
   }
 
