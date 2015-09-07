@@ -4,6 +4,7 @@ public class Response<T> {
 
   private UserInformation userInformation;
   private T requestedInformation;
+  private Error error;
 
   public Response() {
   }
@@ -16,11 +17,16 @@ public class Response<T> {
     return requestedInformation;
   }
 
+  public Error getError() {
+    return error;
+  }
+
   @Override
   public String toString() {
     return "Response{" +
         "userInformation=" + userInformation +
         ", requestedInformation=" + requestedInformation +
+        ", error=" + error +
         '}';
   }
 }

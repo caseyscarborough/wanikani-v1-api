@@ -1,14 +1,19 @@
 package com.wanikani.api;
 
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.wanikani.api.model.*;
+import com.wanikani.api.model.Error;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
@@ -108,9 +113,10 @@ public class WaniKaniClient {
     return request("/vocabulary/" + level, new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
   }
 
-  private <T> T request(String endpoint, TypeReference<T> reference) {
+  private <T extends Response> T request(String endpoint, TypeReference<T> reference) {
+    String url = getBaseUrl() + endpoint;
     try {
-      URL obj = new URL(getBaseUrl() + endpoint);
+      URL obj = new URL(url);
       HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
       connection.setRequestMethod("GET");
       BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -121,10 +127,20 @@ public class WaniKaniClient {
         response.append(inputLine);
       }
       in.close();
-      return mapper.readValue(response.toString(), reference);
-    } catch (Exception e) {
-      e.printStackTrace();
-      throw new RuntimeException();
+      T output = mapper.readValue(response.toString(), reference);
+      if (output.getError() != null) {
+        Error error = output.getError();
+        throw new WaniKaniException(error.getCode(), error.getMessage());
+      }
+      return output;
+    } catch (JsonMappingException e) {
+      throw new WaniKaniException("An error occurred parsing JSON. The input structure did not match the structure expected for the result type.", e);
+    } catch (JsonParseException e) {
+      throw new WaniKaniException("An error occurred parsing JSON with invalid format.", e);
+    } catch (MalformedURLException e) {
+      throw new WaniKaniException("URL was malformed: " + url, e);
+    } catch (IOException e) {
+      throw new WaniKaniException("An IO error occurred while performing request.", e);
     }
   }
 }
