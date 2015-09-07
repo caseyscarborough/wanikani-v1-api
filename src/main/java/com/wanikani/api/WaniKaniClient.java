@@ -2,10 +2,10 @@ package com.wanikani.api;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.wanikani.api.config.Configuration;
+import com.wanikani.api.exception.WaniKaniException;
+import com.wanikani.api.json.ObjectMapperFactory;
 import com.wanikani.api.model.*;
 import com.wanikani.api.model.Error;
 
@@ -20,17 +20,12 @@ import java.util.List;
 public class WaniKaniClient {
 
   private String apiKey;
-  private ObjectMapper mapper;
 
   public WaniKaniClient(String apiKey) {
     if (apiKey == null || apiKey.trim().isEmpty()) {
       throw new RuntimeException("An API key is required to make requests to the API. Get your API key at https://www.wanikani.com/account.");
     }
     this.apiKey = apiKey;
-    mapper = new ObjectMapper();
-    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-    mapper.setPropertyNamingStrategy(PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES);
-
   }
 
   private String getBaseUrl() {
@@ -127,7 +122,7 @@ public class WaniKaniClient {
         response.append(inputLine);
       }
       in.close();
-      T output = mapper.readValue(response.toString(), reference);
+      T output = new ObjectMapperFactory().getInstance().readValue(response.toString(), reference);
       if (output.getError() != null) {
         Error error = output.getError();
         throw new WaniKaniException(error.getCode(), error.getMessage());

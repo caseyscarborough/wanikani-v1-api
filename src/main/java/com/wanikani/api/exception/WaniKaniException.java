@@ -1,4 +1,4 @@
-package com.wanikani.api;
+package com.wanikani.api.exception;
 
 public class WaniKaniException extends RuntimeException {
 
