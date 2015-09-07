@@ -1,7 +1,5 @@
 package com.wanikani.api.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Radical extends StatisticsItem {
 
   private String image;
