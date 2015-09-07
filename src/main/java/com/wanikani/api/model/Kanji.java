@@ -1,7 +1,6 @@
 package com.wanikani.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.wanikani.api.config.Configuration;
 
 public class Kanji extends BaseItem {
 
@@ -14,6 +13,7 @@ public class Kanji extends BaseItem {
   private Statistics statistics;
 
   public Kanji() {
+    this.type = ItemType.KANJI;
   }
 
   public String getOnyomi() {
@@ -59,10 +59,6 @@ public class Kanji extends BaseItem {
 
   public boolean isUnlocked() {
     return statistics != null;
-  }
-
-  public String getInformationUrl() {
-    return Configuration.KANJI_BASE_URL + character;
   }
 
   @Override

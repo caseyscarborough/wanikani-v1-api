@@ -7,7 +7,6 @@ import java.util.Date;
 
 public class Item extends BaseItem {
 
-  private String type;
   private String kana;
   private String onyomi;
   private String kunyomi;
@@ -18,14 +17,6 @@ public class Item extends BaseItem {
   private Date unlockedDate;
 
   public Item() {
-  }
-
-  public String getType() {
-    return type;
-  }
-
-  public void setType(String type) {
-    this.type = type;
   }
 
   public String getKana() {
@@ -79,7 +70,6 @@ public class Item extends BaseItem {
   @Override
   public String toString() {
     return "Item{" +
-        "type='" + type + '\'' +
         ", kana='" + kana + '\'' +
         ", onyomi='" + onyomi + '\'' +
         ", kunyomi='" + kunyomi + '\'' +

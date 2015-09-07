@@ -31,7 +31,6 @@ public class Statistics {
   @JsonDeserialize(using = LongToDateDeserializer.class)
   private Date burnedDate;
 
-
   public Statistics() {
   }
 

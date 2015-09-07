@@ -62,7 +62,7 @@ public class WaniKaniClientTest {
     assertEquals(3, items.size());
 
     Item first = items.get(0);
-    assertEquals("vocabulary", first.getType());
+    assertEquals(ItemType.VOCABULARY, first.getType());
     assertEquals("丸い", first.getCharacter());
     assertEquals("まるい", first.getKana());
     assertEquals("circular, round, spherical", first.getMeaning());
@@ -76,7 +76,7 @@ public class WaniKaniClientTest {
     assertEquals(10, items.size());
 
     Item first = items.get(0);
-    assertEquals("vocabulary", first.getType());
+    assertEquals(ItemType.VOCABULARY, first.getType());
     assertEquals("〜才", first.getCharacter());
     assertEquals("さい", first.getKana());
     assertEquals("years old, age", first.getMeaning());
@@ -94,7 +94,7 @@ public class WaniKaniClientTest {
     }
 
     CriticalItem first = items.get(0);
-    assertEquals("vocabulary", first.getType());
+    assertEquals(ItemType.VOCABULARY, first.getType());
     assertEquals("八日", first.getCharacter());
     assertEquals("ようか", first.getKana());
     assertEquals("eight days, day eight, eighth day", first.getMeaning());

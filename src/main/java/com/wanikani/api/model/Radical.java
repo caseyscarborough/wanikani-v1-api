@@ -1,7 +1,6 @@
 package com.wanikani.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.wanikani.api.config.Configuration;
 
 public class Radical extends BaseItem {
 
@@ -11,6 +10,7 @@ public class Radical extends BaseItem {
   private Statistics statistics;
 
   public Radical() {
+    this.type = ItemType.RADICAL;
   }
 
   public String getImage() {
@@ -32,10 +32,6 @@ public class Radical extends BaseItem {
 
   public boolean isUnlocked() {
     return statistics != null;
-  }
-
-  public String getInformationUrl() {
-    return Configuration.RADICAL_BASE_URL + character;
   }
 
   @Override

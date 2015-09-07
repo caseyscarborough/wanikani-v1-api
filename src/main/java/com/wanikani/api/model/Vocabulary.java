@@ -1,7 +1,6 @@
 package com.wanikani.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.wanikani.api.config.Configuration;
 
 public class Vocabulary extends BaseItem {
 
@@ -11,6 +10,7 @@ public class Vocabulary extends BaseItem {
   private Statistics statistics;
 
   public Vocabulary() {
+    this.type = ItemType.VOCABULARY;
   }
 
   public String getKana() {
@@ -31,10 +31,6 @@ public class Vocabulary extends BaseItem {
 
   public boolean isUnlocked() {
     return statistics != null;
-  }
-
-  public String getInformationUrl() {
-    return Configuration.VOCABULARY_BASE_URL + character;
   }
 
   @Override
