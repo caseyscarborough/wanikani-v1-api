@@ -48,11 +48,11 @@ public class WaniKaniClient {
     return request("/srs-distribution", new TypeReference<Response<SrsDistribution>>() {}).getRequestedInformation();
   }
 
-  public List<Item> getRecentUnlocksList() {
-    return getRecentUnlocksList(null);
+  public List<Item> getRecentUnlocks() {
+    return getRecentUnlocks(null);
   }
 
-  public List<Item> getRecentUnlocksList(Integer limit) {
+  public List<Item> getRecentUnlocks(Integer limit) {
     String endpoint = "/recent-unlocks";
     if (limit != null) {
       endpoint += "/" + limit;
@@ -60,11 +60,11 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Item>>>() {}).getRequestedInformation();
   }
 
-  public List<CriticalItem> getCriticalItemsList() {
-    return getCriticalItemsList(null);
+  public List<CriticalItem> getCriticalItems() {
+    return getCriticalItems(null);
   }
 
-  public List<CriticalItem> getCriticalItemsList(Integer minimumPercentage) {
+  public List<CriticalItem> getCriticalItems(Integer minimumPercentage) {
     String endpoint = "/critical-items";
     if (minimumPercentage != null) {
       endpoint += "/" + minimumPercentage;
@@ -72,11 +72,11 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<CriticalItem>>>() {}).getRequestedInformation();
   }
 
-  public List<Radical> getRadicalsList() {
-    return getRadicalsList(null);
+  public List<Radical> getRadicals() {
+    return getRadicals(null);
   }
 
-  public List<Radical> getRadicalsList(Integer level) {
+  public List<Radical> getRadicals(Integer level) {
     String endpoint = "/radicals";
     if (level != null) {
       endpoint += "/" + level;
@@ -84,11 +84,11 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Radical>>>() {}).getRequestedInformation();
   }
 
-  public List<Kanji> getKanjiList() {
-    return getKanjiList(null);
+  public List<Kanji> getKanji() {
+    return getKanji(null);
   }
 
-  public List<Kanji> getKanjiList(Integer level) {
+  public List<Kanji> getKanji(Integer level) {
     String endpoint = "/kanji";
     if (level != null) {
       endpoint += "/" + level;
@@ -96,11 +96,11 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Kanji>>>() {}).getRequestedInformation();
   }
 
-  public List<Vocabulary> getVocabularyList() {
-    return getVocabularyList(null);
+  public List<Vocabulary> getVocabulary() {
+    return getVocabulary(null);
   }
 
-  public List<Vocabulary> getVocabularyList(Integer level) {
+  public List<Vocabulary> getVocabulary(Integer level) {
     if (level == null) {
       return request("/vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
     }
