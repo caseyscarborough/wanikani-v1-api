@@ -111,7 +111,6 @@ public class WaniKaniClient {
 
   private <T extends Response> T request(String endpoint, TypeReference<T> reference) {
     String url = getBaseUrl() + endpoint;
-    System.out.println(url);
     try {
       URL obj = new URL(url);
       HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
