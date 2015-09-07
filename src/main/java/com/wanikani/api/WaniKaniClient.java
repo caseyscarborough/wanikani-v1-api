@@ -30,23 +30,23 @@ public class WaniKaniClient {
   }
 
   private String getBaseUrl() {
-    return Configuration.API_BASE_URL + "/user/" + apiKey;
+    return Configuration.API_BASE_URL + "/user/" + apiKey + "/";
   }
 
   public UserInformation getUserInformation() {
-    return request("/user-information", new TypeReference<Response>() {}).getUserInformation();
+    return request("user-information", new TypeReference<Response>() {}).getUserInformation();
   }
 
   public StudyQueue getStudyQueue() {
-    return request("/study-queue", new TypeReference<Response<StudyQueue>>() {}).getRequestedInformation();
+    return request("study-queue", new TypeReference<Response<StudyQueue>>() {}).getRequestedInformation();
   }
 
   public LevelProgression getLevelProgression() {
-    return request("/level-progression", new TypeReference<Response<LevelProgression>>() {}).getRequestedInformation();
+    return request("level-progression", new TypeReference<Response<LevelProgression>>() {}).getRequestedInformation();
   }
 
   public SrsDistribution getSrsDistribution() {
-    return request("/srs-distribution", new TypeReference<Response<SrsDistribution>>() {}).getRequestedInformation();
+    return request("srs-distribution", new TypeReference<Response<SrsDistribution>>() {}).getRequestedInformation();
   }
 
   public List<Item> getRecentUnlocks() {
@@ -54,7 +54,7 @@ public class WaniKaniClient {
   }
 
   public List<Item> getRecentUnlocks(Integer limit) {
-    String endpoint = "/recent-unlocks";
+    String endpoint = "recent-unlocks";
     if (limit != null) {
       if (limit > Configuration.RECENT_UNLOCKS_MAX_LIMIT) {
         limit = Configuration.RECENT_UNLOCKS_MAX_LIMIT;
@@ -72,7 +72,7 @@ public class WaniKaniClient {
   }
 
   public List<CriticalItem> getCriticalItems(Integer maximumPercentage) {
-    String endpoint = "/critical-items";
+    String endpoint = "critical-items";
     if (maximumPercentage != null) {
       if (maximumPercentage > Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE) {
         maximumPercentage = Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE;
@@ -86,7 +86,7 @@ public class WaniKaniClient {
   }
 
   public List<Radical> getRadicals(int ... levels) {
-    String endpoint = "/radicals";
+    String endpoint = "radicals";
     if (levels.length > 0) {
       endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
     }
@@ -94,7 +94,7 @@ public class WaniKaniClient {
   }
 
   public List<Kanji> getKanji(int ... levels) {
-    String endpoint = "/kanji";
+    String endpoint = "kanji";
     if (levels.length > 0) {
       endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
     }
@@ -103,13 +103,13 @@ public class WaniKaniClient {
 
   public List<Vocabulary> getVocabulary(int ... levels) {
     if (levels.length == 0) {
-      return request("/vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
+      return request("vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
     }
 
-    return request("/vocabulary/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", ""), new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
+    return request("vocabulary/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", ""), new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
   }
 
-  private <T extends Response> T request(String endpoint, TypeReference<T> reference) {
+  protected  <T extends Response> T request(String endpoint, TypeReference<T> reference) {
     String url = getBaseUrl() + endpoint;
     try {
       URL obj = new URL(url);

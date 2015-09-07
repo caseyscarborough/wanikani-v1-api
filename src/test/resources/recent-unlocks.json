@@ -1,0 +1,103 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": [
+    {
+      "type": "vocabulary",
+      "character": "〜才",
+      "kana": "さい",
+      "meaning": "years old, age",
+      "level": 2,
+      "unlocked_date": 1441550030
+    },
+    {
+      "type": "vocabulary",
+      "character": "才人",
+      "kana": "さいじん",
+      "meaning": "talented person, clever person",
+      "level": 2,
+      "unlocked_date": 1441550030
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸い",
+      "kana": "まるい",
+      "meaning": "circular, round, spherical",
+      "level": 2,
+      "unlocked_date": 1441458973
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸",
+      "kana": "まる",
+      "meaning": "circle, round, circular",
+      "level": 2,
+      "unlocked_date": 1441458973
+    },
+    {
+      "type": "kanji",
+      "character": "丁",
+      "meaning": "street",
+      "onyomi": "ちょう",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458967
+    },
+    {
+      "type": "vocabulary",
+      "character": "人々",
+      "kana": "ひとびと",
+      "meaning": "people, everybody, each person",
+      "level": 2,
+      "unlocked_date": 1441458942
+    },
+    {
+      "type": "vocabulary",
+      "character": "出す",
+      "kana": "だす",
+      "meaning": "to remove, to hand over, to take out, to reveal",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "vocabulary",
+      "character": "出口",
+      "kana": "でぐち",
+      "meaning": "exit",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "vocabulary",
+      "character": "出る",
+      "kana": "でる",
+      "meaning": "to exit, to leave",
+      "level": 2,
+      "unlocked_date": 1441458903
+    },
+    {
+      "type": "kanji",
+      "character": "立",
+      "meaning": "stand",
+      "onyomi": "りつ",
+      "kunyomi": "た.つ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "unlocked_date": 1441458870
+    }
+  ]
+}

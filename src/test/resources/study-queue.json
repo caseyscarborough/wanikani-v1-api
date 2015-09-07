@@ -1,0 +1,22 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": {
+    "lessons_available": 12,
+    "reviews_available": 17,
+    "next_review_date": 1441628018,
+    "reviews_available_next_hour": 0,
+    "reviews_available_next_day": 23
+  }
+}

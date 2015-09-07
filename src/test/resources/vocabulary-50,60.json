@@ -1,0 +1,1088 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": [
+    {
+      "character": "尽くす",
+      "kana": "つくす",
+      "meaning": "to exhaust, to run out, to do to exhaustion",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "溶ける",
+      "kana": "とける",
+      "meaning": "to melt, to dissolve, to thaw",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "表彰",
+      "kana": "ひょうしょう",
+      "meaning": "public acknowledgement, public recognition",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "狐",
+      "kana": "きつね",
+      "meaning": "fox",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "輝き",
+      "kana": "かがやき",
+      "meaning": "radiance",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "峰",
+      "kana": "みね",
+      "meaning": "summit, peak, ridge",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "風邪",
+      "kana": "かぜ",
+      "meaning": "cold, common cold",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "漂着",
+      "kana": "ひょうちゃく",
+      "meaning": "drifting ashore",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "〜把",
+      "kana": "わ",
+      "meaning": "counter for bundles",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "堰",
+      "kana": "せき",
+      "meaning": "dam",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "感銘",
+      "kana": "かんめい",
+      "meaning": "deep impression",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "液晶",
+      "kana": "えきしょう",
+      "meaning": "liquid crystal",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "免疫",
+      "kana": "めんえき",
+      "meaning": "immunity, immunization",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "信仰",
+      "kana": "しんこう",
+      "meaning": "religious faith",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "漂流",
+      "kana": "ひょうりゅう",
+      "meaning": "drifting, drift",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "仰天",
+      "kana": "ぎょうてん",
+      "meaning": "taken aback, amazed, horrified, flabbergasted",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "飢え",
+      "kana": "うえ",
+      "meaning": "hunger, starvation",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "漫才",
+      "kana": "まんざい",
+      "meaning": "comic dialogue, two man comedy act",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "壮行",
+      "kana": "そうこう",
+      "meaning": "rousing",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "偶然",
+      "kana": "ぐうぜん",
+      "meaning": "by chance, unexpectedly",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "偶に",
+      "kana": "たまに",
+      "meaning": "occasionally, once in a while",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "連峰",
+      "kana": "れんぽう",
+      "meaning": "mountain range",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "運搬",
+      "kana": "うんぱん",
+      "meaning": "transport, carriage",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "仰々しい",
+      "kana": "ぎょうぎょうしい",
+      "meaning": "pompous, exaggerated",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "検疫",
+      "kana": "けんえき",
+      "meaning": "quarantine",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "諮る",
+      "kana": "はかる",
+      "meaning": "to consult with, to discuss, to confer",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "翻る",
+      "kana": "ひるがえる",
+      "meaning": "to flip, to turn over, to flip over",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "漂う",
+      "kana": "ただよう",
+      "meaning": "to drift",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "悔やむ",
+      "kana": "くやむ",
+      "meaning": "to regret, to mourn, to lament",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "麻布",
+      "kana": "あさぬの",
+      "meaning": "hemp cloth, linen",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "搬出",
+      "kana": "はんしゅつ",
+      "meaning": "carry out",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "帳簿",
+      "kana": "ちょうぼ",
+      "meaning": "account book, register",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "鰐",
+      "kana": "わに",
+      "meaning": "alligator, crocodile",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "伯母",
+      "kana": "おば",
+      "meaning": "aunt",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "洞",
+      "kana": "ほら",
+      "meaning": "cave, den",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "空洞",
+      "kana": "くうどう",
+      "meaning": "cave, hollow, cavity",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "翻意",
+      "kana": "ほんい",
+      "meaning": "change one's mind, change your mind",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "法廷",
+      "kana": "ほうてい",
+      "meaning": "courtroom",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "蟹",
+      "kana": "かに",
+      "meaning": "crab",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "水晶",
+      "kana": "すいしょう",
+      "meaning": "crystal",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "銘々",
+      "kana": "めいめい",
+      "meaning": "each, individual",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "鬱気",
+      "kana": "うっき",
+      "meaning": "gloomy, melancholy, gloominess",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "堤防",
+      "kana": "ていぼう",
+      "meaning": "embankment, bank, levee",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "堤",
+      "kana": "つつみ",
+      "meaning": "embankment, bank, dike",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "無駄",
+      "kana": "むだ",
+      "meaning": "futility, uselessness, pointlessness",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "邪魔",
+      "kana": "じゃま",
+      "meaning": "hinderance, intrusion",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "墳墓",
+      "kana": "ふんぼ",
+      "meaning": "grave, tomb",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "壮大",
+      "kana": "そうだい",
+      "meaning": "magnificent, grand, epic",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "疫病",
+      "kana": "えきびょう",
+      "meaning": "infectious disease, plague, epidemic",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "巧妙",
+      "kana": "こうみょう",
+      "meaning": "ingenious, skillful",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "皇后",
+      "kana": "こうごう",
+      "meaning": "japanese empress",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "〜亭",
+      "kana": "てい",
+      "meaning": "restaurant, traditional japanese restaurant",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "改訂版",
+      "kana": "かいていばん",
+      "meaning": "revised edition",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "翻訳",
+      "kana": "ほんやく",
+      "meaning": "translation",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "搬送",
+      "kana": "はんそう",
+      "meaning": "transportation",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "邪",
+      "kana": "よこしま",
+      "meaning": "wicked, evil",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "奮起",
+      "kana": "ふんき",
+      "meaning": "stirring, rousing oneself",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "殴り込み",
+      "kana": "なぐりこみ",
+      "meaning": "raid",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "生涯",
+      "kana": "しょうがい",
+      "meaning": "one's lifetime, one's career",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "悪賢い",
+      "kana": "わるがしこい",
+      "meaning": "devious, cunning, crafty, wily",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "鬱陶しい",
+      "kana": "うっとうしい",
+      "meaning": "gloomy, gloomy mood, depressing",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "脅す",
+      "kana": "おどす",
+      "meaning": "to threaten",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "巧い",
+      "kana": "うまい",
+      "meaning": "adept, skillful, clever",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "下駄",
+      "kana": "げた",
+      "meaning": "geta, japanese wooden clogs",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "唐突",
+      "kana": "とうとつ",
+      "meaning": "sudden, unexpected",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "訂正",
+      "kana": "ていせい",
+      "meaning": "correction, revision",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "濁る",
+      "kana": "にごる",
+      "meaning": "to become muddy, to become impure, to become cloudy",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "宮廷",
+      "kana": "きゅうてい",
+      "meaning": "imperial court, royal court",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "壮年",
+      "kana": "そうねん",
+      "meaning": "prime of life",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "名簿",
+      "kana": "めいぼ",
+      "meaning": "register of names, list of names, roll",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "漫画",
+      "kana": "まんが",
+      "meaning": "manga, japanese comics",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "軌道",
+      "kana": "きどう",
+      "meaning": "orbit, trajectory",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "銘柄",
+      "kana": "めいがら",
+      "meaning": "brand, make",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "洞穴",
+      "kana": "どうけつ",
+      "meaning": "cave, den",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "軌跡",
+      "kana": "きせき",
+      "meaning": "tire track, path one has taken",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "興奮",
+      "kana": "こうふん",
+      "meaning": "excitement, stimulation",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "仰ぐ",
+      "kana": "あおぐ",
+      "meaning": "to look up at, to look up to",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "伯",
+      "kana": "はく",
+      "meaning": "chief, count, earl",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "把握",
+      "kana": "はあく",
+      "meaning": "grasp, catch",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "彩り",
+      "kana": "いろどり",
+      "meaning": "coloring, colouring, color scheme, makeup",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "配偶者",
+      "kana": "はいぐうしゃ",
+      "meaning": "spouse, partner",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "淀川",
+      "kana": "よどがわ",
+      "meaning": "yodogawa",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "古墳",
+      "kana": "こふん",
+      "meaning": "ancient tomb, ancient mound",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "遂げる",
+      "kana": "とげる",
+      "meaning": "to accomplish, to achieve, to carry out",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "殴り合い",
+      "kana": "なぐりあい",
+      "meaning": "fistfight, fist fight",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "駄目",
+      "kana": "だめ",
+      "meaning": "not good, hopeless, cannot, not allowed",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "泌尿器",
+      "kana": "ひにょうき",
+      "meaning": "urinary organs",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "諮問",
+      "kana": "しもん",
+      "meaning": "question, enquiry",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "伯父",
+      "kana": "おじ",
+      "meaning": "uncle",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "蛮行",
+      "kana": "ばんこう",
+      "meaning": "barbarism, brutality",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "灯る",
+      "kana": "ともる",
+      "meaning": "to burn, to be lighted, to be lit, to be burning",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "帆柱",
+      "kana": "ほばしら",
+      "meaning": "mast",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "煩い",
+      "kana": "うるさい",
+      "meaning": "noisy, loud, annoying",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "無邪気",
+      "kana": "むじゃき",
+      "meaning": "innocence, simple mindedness, innocent, simple minded, naive",
+      "level": 50,
+      "user_specific": null
+    },
+    {
+      "character": "罷免",
+      "kana": "ひめん",
+      "meaning": "dismissal, discharge",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "藍",
+      "kana": "あい",
+      "meaning": "indigo",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "唄",
+      "kana": "うた",
+      "meaning": "song, shamisen song",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "坑道",
+      "kana": "こうどう",
+      "meaning": "tunnel, mine, shaft",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "解剖学",
+      "kana": "かいぼうがく",
+      "meaning": "anatomy",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "弾劾",
+      "kana": "だんがい",
+      "meaning": "impeachment, accusation, censure, denunciation",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "湧く",
+      "kana": "わく",
+      "meaning": "to well up, to gush forth, to spring out, to surge",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "長唄",
+      "kana": "ながうた",
+      "meaning": "long shamisen song, epic shamisen song, nagauta",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "死刑囚",
+      "kana": "しけいしゅう",
+      "meaning": "condemned criminal, death row convict",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "妄想",
+      "kana": "もうそう",
+      "meaning": "delusion, fantasy",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "娘婿",
+      "kana": "むすめむこ",
+      "meaning": "adopted son in law, son in law",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "悪戯",
+      "kana": "いたずら",
+      "meaning": "tease, prank, trick, practical joke",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "殉職",
+      "kana": "じゅんしょく",
+      "meaning": "die at one's post, die on duty, die at your post",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "拷問",
+      "kana": "ごうもん",
+      "meaning": "torture, the rack, third degree",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "吸い殻",
+      "kana": "すいがら",
+      "meaning": "cigarette butt, tobacco ashes",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "渓谷",
+      "kana": "けいこく",
+      "meaning": "valley, ravine, canyon",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "煩忙",
+      "kana": "はんぼう",
+      "meaning": "busy, busy from pressure",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "湖畔",
+      "kana": "こはん",
+      "meaning": "lake shore",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "下痢",
+      "kana": "げり",
+      "meaning": "diarrhea, diarrhoea",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "矯正",
+      "kana": "きょうせい",
+      "meaning": "correction, remedy",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "硫黄",
+      "kana": "いおう",
+      "meaning": "sulfur, sulphur",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "藻",
+      "kana": "も",
+      "meaning": "seaweed, duckweed, algae",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "海藻",
+      "kana": "かいそう",
+      "meaning": "seaweed",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "野蛮",
+      "kana": "やばん",
+      "meaning": "savage, uncivilized, uncivilised",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "南蛮",
+      "kana": "なんばん",
+      "meaning": "southern barbarians, nanban",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "謹賀新年",
+      "kana": "きんがしんねん",
+      "meaning": "happy new year, happy new year!",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "容赦なく",
+      "kana": "ようしゃなく",
+      "meaning": "relentlessly, mercilessly",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "逝去",
+      "kana": "せいきょ",
+      "meaning": "death",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "倹約",
+      "kana": "けんやく",
+      "meaning": "thrift, economy, frugality",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "醜悪",
+      "kana": "しゅうあく",
+      "meaning": "ugliness, meanness, offensiveness",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "醜態",
+      "kana": "しゅうたい",
+      "meaning": "shameful sight, disgraceful behavior, disgraceful behaviour",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "醜聞",
+      "kana": "しゅうぶん",
+      "meaning": "scandal",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "匿名",
+      "kana": "とくめい",
+      "meaning": "anonymity, pseudonym",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "升",
+      "kana": "ます",
+      "meaning": "grid, box, measuring container, measure",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "升目",
+      "kana": "ますめ",
+      "meaning": "square, box, measure",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "唄う",
+      "kana": "うたう",
+      "meaning": "to sing, to recite, to chant",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "囚人",
+      "kana": "しゅうじん",
+      "meaning": "prisoner, convict",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "婿",
+      "kana": "むこ",
+      "meaning": "husband, groom, son in law",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "花婿",
+      "kana": "はなむこ",
+      "meaning": "bridegroom, groom",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "寡婦",
+      "kana": "かふ",
+      "meaning": "widow",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "寡黙",
+      "kana": "かもく",
+      "meaning": "silent, shy",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "帆船",
+      "kana": "ほせん, ほぶね",
+      "meaning": "sailboat, sailing boat, sailing ship",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "管弦楽団",
+      "kana": "かんげんがくだん",
+      "meaning": "orchestra",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "思慕",
+      "kana": "しぼ",
+      "meaning": "yearning, deep affection",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "某",
+      "kana": "ぼう",
+      "meaning": "certain, one",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "湧水",
+      "kana": "ゆうすい, わきみず",
+      "meaning": "spring, welling of water",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "慕う",
+      "kana": "したう",
+      "meaning": "to yearn for, to miss, to adore",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "感慨深い",
+      "kana": "かんがいぶかい",
+      "meaning": "deeply moving, deeply emotive",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "戯れ",
+      "kana": "たわむれ",
+      "meaning": "play flirt, laugh, joke",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "桟橋",
+      "kana": "さんばし",
+      "meaning": "wharf, pier",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "分泌",
+      "kana": "ぶんぴつ, ぶんぴ",
+      "meaning": "secretion, discharge",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "隠匿",
+      "kana": "いんとく",
+      "meaning": "hide, concealment, conceal",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "煩雑",
+      "kana": "はんざつ",
+      "meaning": "complex, intricate, complicated",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "漸く",
+      "kana": "ようやく",
+      "meaning": "finally, at last, narrowly, hardly",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "廉価",
+      "kana": "れんか",
+      "meaning": "low price, cheap",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "赤痢",
+      "kana": "せきり",
+      "meaning": "dysentery",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "醜い",
+      "kana": "みにくい",
+      "meaning": "ugly, unattractive, unsightly, unseemly",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "渓流",
+      "kana": "けいりゅう",
+      "meaning": "mountain stream",
+      "level": 60,
+      "user_specific": null
+    },
+    {
+      "character": "感慨無量",
+      "kana": "かんがいむりょう",
+      "meaning": "deep emotion, deeply moved, filled with emotion",
+      "level": 60,
+      "user_specific": null
+    }
+  ]
+}

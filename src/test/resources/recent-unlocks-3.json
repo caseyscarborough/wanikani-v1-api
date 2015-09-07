@@ -1,0 +1,44 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": [
+    {
+      "type": "vocabulary",
+      "character": "丸い",
+      "kana": "まるい",
+      "meaning": "circular, round, spherical",
+      "level": 2,
+      "unlocked_date": 1441458973
+    },
+    {
+      "type": "kanji",
+      "character": "夕",
+      "meaning": "evening",
+      "onyomi": "せき",
+      "kunyomi": "ゆう",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "unlocked_date": 1441458730
+    },
+    {
+      "type": "radical",
+      "character": "土",
+      "meaning": "grave",
+      "image": null,
+      "level": 2,
+      "unlocked_date": 1441056015
+    }
+  ]
+}

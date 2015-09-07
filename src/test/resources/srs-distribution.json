@@ -1,0 +1,47 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": {
+    "apprentice": {
+      "radicals": 0,
+      "kanji": 28,
+      "vocabulary": 12,
+      "total": 40
+    },
+    "guru": {
+      "radicals": 60,
+      "kanji": 23,
+      "vocabulary": 42,
+      "total": 125
+    },
+    "master": {
+      "radicals": 0,
+      "kanji": 0,
+      "vocabulary": 0,
+      "total": 0
+    },
+    "enlighten": {
+      "radicals": 0,
+      "kanji": 0,
+      "vocabulary": 0,
+      "total": 0
+    },
+    "burned": {
+      "radicals": 0,
+      "kanji": 0,
+      "vocabulary": 0,
+      "total": 0
+    }
+  }
+}
