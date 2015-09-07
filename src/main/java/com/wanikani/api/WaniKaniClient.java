@@ -18,8 +18,25 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * The main class for interacting with the WaniKani API.
+ *
+ * Usage:
+ *
+ * <pre>
+ * {@code
+ * WaniKaniClient client = new WaniKaniClient("your-api-key");
+ *
+ * // use client methods
+ * UserInformation info = client.getUserInformation();
+ * }
+ * </pre>
+ */
 public class WaniKaniClient {
 
+  /**
+   * The user's API key. Required for calls to the API.
+   */
   private String apiKey;
 
   public WaniKaniClient(String apiKey) {
@@ -33,26 +50,51 @@ public class WaniKaniClient {
     return Configuration.API_BASE_URL + "/user/" + apiKey + "/";
   }
 
+  /**
+   * Retrieves information about the user associated with the API key.
+   * @return The user's information
+   */
   public UserInformation getUserInformation() {
     return request("user-information", new TypeReference<Response>() {}).getUserInformation();
   }
 
+  /**
+   * Retrieves information about the user's current study queue.
+   * @return The study queue information
+   */
   public StudyQueue getStudyQueue() {
     return request("study-queue", new TypeReference<Response<StudyQueue>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves the user's current level radical and kanji progression.
+   * @return The user's current level progression
+   */
   public LevelProgression getLevelProgression() {
     return request("level-progression", new TypeReference<Response<LevelProgression>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves information about the user's current SRS Distribution.
+   * @return The user's current SRS Distribution.
+   */
   public SrsDistribution getSrsDistribution() {
     return request("srs-distribution", new TypeReference<Response<SrsDistribution>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves the user's recently unlocked items, with the default limit of ten.
+   * @return The list of recently unlocked items.
+   */
   public List<Item> getRecentUnlocks() {
     return getRecentUnlocks(null);
   }
 
+  /**
+   * Retrieves the user's recently unlocked items.
+   * @param limit the number of items to retrieve, minimum of 1, maximum of 100.
+   * @return The list of recently unlocked items.
+   */
   public List<Item> getRecentUnlocks(Integer limit) {
     String endpoint = "recent-unlocks";
     if (limit != null) {
@@ -67,10 +109,19 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Item>>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves the user's critical items below 75%.
+   * @return The list of critical items.
+   */
   public List<CriticalItem> getCriticalItems() {
     return getCriticalItems(null);
   }
 
+  /**
+   * Retrieves the user's critical items below a given percentage.
+   * @param maximumPercentage The maximum percentage to retrieve items for.
+   * @return The list of critical items.
+   */
   public List<CriticalItem> getCriticalItems(Integer maximumPercentage) {
     String endpoint = "critical-items";
     if (maximumPercentage != null) {
@@ -85,6 +136,13 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<CriticalItem>>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves a list of radicals. No parameters will retrieve all of the user's
+   * currently unlocked radicals. Any number of levels may be passed in to retrieve
+   * radicals from those levels.
+   * @param levels The levels to retrieve radicals for, omit for just the user's unlocked radicals.
+   * @return The list of radicals.
+   */
   public List<Radical> getRadicals(int ... levels) {
     String endpoint = "radicals";
     if (levels.length > 0) {
@@ -93,6 +151,13 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Radical>>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves a list of kanji. No parameters will retrieve all of the user's
+   * currently unlocked kanji. Any number of levels may be passed in to retrieve
+   * kanji from those levels.
+   * @param levels The levels to retrieve kanji for, omit for just the user's unlocked kanji.
+   * @return The list of kanji.
+   */
   public List<Kanji> getKanji(int ... levels) {
     String endpoint = "kanji";
     if (levels.length > 0) {
@@ -101,6 +166,13 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<Kanji>>>() {}).getRequestedInformation();
   }
 
+  /**
+   * Retrieves a list of vocabulary. No parameters will retrieve all of the user's
+   * currently unlocked vocabulary. Any number of levels may be passed in to retrieve
+   * vocabulary from those levels.
+   * @param levels The levels to retrieve vocabulary for, omit for just the user's unlocked vocabulary.
+   * @return The list of vocabulary.
+   */
   public List<Vocabulary> getVocabulary(int ... levels) {
     if (levels.length == 0) {
       return request("vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
@@ -109,7 +181,7 @@ public class WaniKaniClient {
     return request("vocabulary/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", ""), new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
   }
 
-  protected  <T extends Response> T request(String endpoint, TypeReference<T> reference) {
+  protected  <T extends Response> T request(String endpoint, TypeReference<T> reference) throws WaniKaniException {
     String url = getBaseUrl() + endpoint;
     try {
       URL obj = new URL(url);
