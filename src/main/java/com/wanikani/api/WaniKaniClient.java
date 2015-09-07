@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.List;
 
 public class WaniKaniClient {
@@ -84,44 +85,33 @@ public class WaniKaniClient {
     return request(endpoint, new TypeReference<Response<List<CriticalItem>>>() {}).getRequestedInformation();
   }
 
-  public List<Radical> getRadicals() {
-    return getRadicals(null);
-  }
-
-  public List<Radical> getRadicals(Integer level) {
+  public List<Radical> getRadicals(int ... levels) {
     String endpoint = "/radicals";
-    if (level != null) {
-      endpoint += "/" + level;
+    if (levels.length > 0) {
+      endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
     }
     return request(endpoint, new TypeReference<Response<List<Radical>>>() {}).getRequestedInformation();
   }
 
-  public List<Kanji> getKanji() {
-    return getKanji(null);
-  }
-
-  public List<Kanji> getKanji(Integer level) {
+  public List<Kanji> getKanji(int ... levels) {
     String endpoint = "/kanji";
-    if (level != null) {
-      endpoint += "/" + level;
+    if (levels.length > 0) {
+      endpoint += "/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", "");
     }
     return request(endpoint, new TypeReference<Response<List<Kanji>>>() {}).getRequestedInformation();
   }
 
-  public List<Vocabulary> getVocabulary() {
-    return getVocabulary(null);
-  }
-
-  public List<Vocabulary> getVocabulary(Integer level) {
-    if (level == null) {
+  public List<Vocabulary> getVocabulary(int ... levels) {
+    if (levels.length == 0) {
       return request("/vocabulary", new TypeReference<Response<GeneralWrapper<List<Vocabulary>>>>() {}).getRequestedInformation().getGeneral();
     }
 
-    return request("/vocabulary/" + level, new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
+    return request("/vocabulary/" + Arrays.toString(levels).replaceAll("[\\s\\[\\]]", ""), new TypeReference<Response<List<Vocabulary>>>() {}).getRequestedInformation();
   }
 
   private <T extends Response> T request(String endpoint, TypeReference<T> reference) {
     String url = getBaseUrl() + endpoint;
+    System.out.println(url);
     try {
       URL obj = new URL(url);
       HttpURLConnection connection = (HttpURLConnection) obj.openConnection();

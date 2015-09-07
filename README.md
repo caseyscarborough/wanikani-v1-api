@@ -73,14 +73,14 @@ List<Item> criticalItems = client.getCriticalItems(95);
 
 ### Radicals List
 
-Retrieves a full list of user's radicals with statistics, sorted by ascending level. A specific level can be passed in to return only radicals from that level.
+Retrieves a full list of user's radicals with statistics, sorted by ascending level. A list of specific levels can be passed in to return only radicals from those levels.
 
 ```java
 // Get all user's radicals
 List<Radical> radicals = client.getRadicals();
 
-// Get radicals from level 10
-List<Radical> radicals = client.getRadicals(10);
+// Get radicals from level 50, 55, and 60
+List<Radical> radicals = client.getRadicals(50, 55, 60);
 
 // Get statistics about a radical
 Statistics stats = radicals.get(0).getStatistics();
@@ -88,14 +88,14 @@ Statistics stats = radicals.get(0).getStatistics();
 
 ### Kanji List
 
-Retrieves a full list of user's kanji with statistics, sorted by ascending level. A specific level can be passed in to return only kanji from that level.
+Retrieves a full list of user's kanji with statistics, sorted by ascending level. A list of specific levels can be passed in to return only kanji from those levels.
 
 ```java
 // Get all user's kanji
 List<Kanji> kanji = client.getKanji();
 
-// Get kanjis from level 25
-List<Kanji> kanji = client.getKanji(25);
+// Get kanjis from levels 1, 2, and 3
+List<Kanji> kanji = client.getKanji(1, 2, 3);
 
 // Get statistics about a kanji
 Statistics stats = kanji.get(0).getStatistics();
@@ -103,14 +103,14 @@ Statistics stats = kanji.get(0).getStatistics();
 
 ### Vocabulary List
 
-Retrieves a full list of user's vocabulary with statistics, sorted by ascending level. A specific level can be passed in to return only vocabulary from that level.
+Retrieves a full list of user's vocabulary with statistics, sorted by ascending level. A list of specific levels can be passed in to return only vocabulary from those levels.
 
 ```java
 // Get all user's vocabulary items
 List<Vocabulary> vocabulary = client.getVocabulary();
 
-// Get vocabulary from level 30
-List<Vocabulary> vocabulary = client.getVocabulary(30);
+// Get vocabulary from levels 10 and 11
+List<Vocabulary> vocabulary = client.getVocabulary(10, 11);
 
 // Get statistics about a vocabulary item
 Statistics stats = vocabulary.get(0).getStatistics();
