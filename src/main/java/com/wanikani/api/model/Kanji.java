@@ -1,33 +1,18 @@
 package com.wanikani.api.model;
 
-public class Kanji {
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-  private String character;
-  private String meaning;
+public class Kanji extends BaseItem {
+
   private String onyomi;
   private String kunyomi;
   private String nanori;
   private String importantReading;
-  private Integer level;
+
+  @JsonProperty("user_specific")
   private Statistics statistics;
 
   public Kanji() {
-  }
-
-  public String getCharacter() {
-    return character;
-  }
-
-  public void setCharacter(String character) {
-    this.character = character;
-  }
-
-  public String getMeaning() {
-    return meaning;
-  }
-
-  public void setMeaning(String meaning) {
-    this.meaning = meaning;
   }
 
   public String getOnyomi() {
@@ -62,14 +47,6 @@ public class Kanji {
     this.importantReading = importantReading;
   }
 
-  public Integer getLevel() {
-    return level;
-  }
-
-  public void setLevel(Integer level) {
-    this.level = level;
-  }
-
   public Statistics getStatistics() {
     return statistics;
   }
@@ -81,14 +58,11 @@ public class Kanji {
   @Override
   public String toString() {
     return "Kanji{" +
-        "character='" + character + '\'' +
-        ", meaning='" + meaning + '\'' +
-        ", onyomi='" + onyomi + '\'' +
+        "onyomi='" + onyomi + '\'' +
         ", kunyomi='" + kunyomi + '\'' +
         ", nanori='" + nanori + '\'' +
         ", importantReading='" + importantReading + '\'' +
-        ", level=" + level +
         ", statistics=" + statistics +
-        '}';
+        "} " + super.toString();
   }
 }

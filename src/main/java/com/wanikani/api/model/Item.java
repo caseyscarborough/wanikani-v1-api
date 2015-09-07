@@ -1,16 +1,13 @@
 package com.wanikani.api.model;
 
-public class Item {
+public class Item extends BaseItem {
 
   private String type;
-  private String character;
   private String kana;
   private String onyomi;
   private String kunyomi;
   private String nanori;
   private String importantReading;
-  private String meaning;
-  private Integer level;
   private Long unlockedDate;
 
   public Item() {
@@ -22,14 +19,6 @@ public class Item {
 
   public void setType(String type) {
     this.type = type;
-  }
-
-  public String getCharacter() {
-    return character;
-  }
-
-  public void setCharacter(String character) {
-    this.character = character;
   }
 
   public String getKana() {
@@ -72,22 +61,6 @@ public class Item {
     this.importantReading = importantReading;
   }
 
-  public String getMeaning() {
-    return meaning;
-  }
-
-  public void setMeaning(String meaning) {
-    this.meaning = meaning;
-  }
-
-  public Integer getLevel() {
-    return level;
-  }
-
-  public void setLevel(Integer level) {
-    this.level = level;
-  }
-
   public Long getUnlockedDate() {
     return unlockedDate;
   }
@@ -100,14 +73,11 @@ public class Item {
   public String toString() {
     return "Item{" +
         "type='" + type + '\'' +
-        ", character='" + character + '\'' +
         ", kana='" + kana + '\'' +
         ", onyomi='" + onyomi + '\'' +
         ", kunyomi='" + kunyomi + '\'' +
         ", nanori='" + nanori + '\'' +
         ", importantReading='" + importantReading + '\'' +
-        ", meaning='" + meaning + '\'' +
-        ", level=" + level +
         ", unlockedDate=" + unlockedDate +
         '}';
   }

@@ -1,21 +1,15 @@
 package com.wanikani.api.model;
 
-public class Vocabulary {
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-  private String character;
+public class Vocabulary extends BaseItem {
+
   private String kana;
-  private String meaning;
-  private Integer level;
+
+  @JsonProperty("user_specific")
+  private Statistics statistics;
 
   public Vocabulary() {
-  }
-
-  public String getCharacter() {
-    return character;
-  }
-
-  public void setCharacter(String character) {
-    this.character = character;
   }
 
   public String getKana() {
@@ -26,29 +20,19 @@ public class Vocabulary {
     this.kana = kana;
   }
 
-  public String getMeaning() {
-    return meaning;
+  public Statistics getStatistics() {
+    return statistics;
   }
 
-  public void setMeaning(String meaning) {
-    this.meaning = meaning;
-  }
-
-  public Integer getLevel() {
-    return level;
-  }
-
-  public void setLevel(Integer level) {
-    this.level = level;
+  public void setStatistics(Statistics statistics) {
+    this.statistics = statistics;
   }
 
   @Override
   public String toString() {
     return "Vocabulary{" +
-        "character='" + character + '\'' +
-        ", kana='" + kana + '\'' +
-        ", meaning='" + meaning + '\'' +
-        ", level=" + level +
-        '}';
+        "kana='" + kana + '\'' +
+        ", statistics=" + statistics +
+        "} " + super.toString();
   }
 }
