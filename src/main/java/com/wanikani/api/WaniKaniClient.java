@@ -99,12 +99,7 @@ public class WaniKaniClient {
   public List<Item> getRecentUnlocks(Integer limit) {
     String endpoint = "recent-unlocks";
     if (limit != null) {
-      if (limit > Configuration.RECENT_UNLOCKS_MAX_LIMIT) {
-        limit = Configuration.RECENT_UNLOCKS_MAX_LIMIT;
-      } else if (limit < Configuration.RECENT_UNLOCKS_MIN_LIMIT) {
-        limit = Configuration.RECENT_UNLOCKS_MIN_LIMIT;
-      }
-
+      limit = Math.min(Math.max(limit, Configuration.RECENT_UNLOCKS_MIN_LIMIT), Configuration.RECENT_UNLOCKS_MAX_LIMIT);
       endpoint += "/" + limit;
     }
     return request(endpoint, new TypeReference<Response<List<Item>>>() {}).getRequestedInformation();
@@ -128,12 +123,7 @@ public class WaniKaniClient {
   public List<CriticalItem> getCriticalItems(Integer maximumPercentage) {
     String endpoint = "critical-items";
     if (maximumPercentage != null) {
-      if (maximumPercentage > Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE) {
-        maximumPercentage = Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE;
-      } else if (maximumPercentage < Configuration.CRITICAL_ITEMS_MIN_PERCENTAGE) {
-        maximumPercentage = Configuration.CRITICAL_ITEMS_MIN_PERCENTAGE;
-      }
-
+      maximumPercentage = Math.min(Math.max(maximumPercentage, Configuration.CRITICAL_ITEMS_MIN_PERCENTAGE), Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE);
       endpoint += "/" + maximumPercentage;
     }
     return request(endpoint, new TypeReference<Response<List<CriticalItem>>>() {}).getRequestedInformation();
