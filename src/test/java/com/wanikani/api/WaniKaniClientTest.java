@@ -2,19 +2,40 @@ package com.wanikani.api;
 
 import com.wanikani.api.config.Configuration;
 import com.wanikani.api.exception.WaniKaniException;
+import com.wanikani.api.http.HttpClient;
 import com.wanikani.api.model.*;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.mockito.InjectMocks;
+import org.mockito.Matchers;
+import org.mockito.Mock;
 
+import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class WaniKaniClientTest {
 
+  private class MockHttpClient extends HttpClient {
+
+    @Override
+    public String request(String url) {
+      String jsonFile = url.replaceAll(Configuration.API_BASE_URL + "/user/api-key/", "").replaceAll("/", "-") + ".json";
+      InputStream in = this.getClass().getClassLoader().getResourceAsStream(jsonFile);
+      Scanner s = new Scanner(in).useDelimiter("\\A");
+      return s.hasNext() ? s.next() : "";
+    }
+  }
+
+  private HttpClient httpClient;
   private WaniKaniClient client;
 
   @Rule
@@ -23,7 +44,9 @@ public class WaniKaniClientTest {
   @Before
   public void setUp() {
     client = new WaniKaniClient("api-key");
-    client.setClient(new MockHttpClient());
+    httpClient = mock(MockHttpClient.class);
+    when(httpClient.request(Matchers.anyString())).thenCallRealMethod();
+    client.setClient(httpClient);
   }
 
   @Test
@@ -115,14 +138,16 @@ public class WaniKaniClientTest {
   }
 
   @Test
-  public void testRecentUnlocksWhenLimitIsAboveTheMaximum() {
+  public void testRecentUnlocksWhenLimitIsAboveTheMaximum() throws Exception{
     List<Item> items = client.getRecentUnlocks(300);
+    verify(httpClient, times(1)).request(getBaseUrl() + "recent-unlocks/" + Configuration.RECENT_UNLOCKS_MAX_LIMIT);
     assertEquals(Configuration.RECENT_UNLOCKS_MAX_LIMIT, items.size());
   }
 
   @Test
-  public void testRecentUnlocksWhenLimitIsBelowMinimum() {
+  public void testRecentUnlocksWhenLimitIsBelowMinimum() throws Exception {
     List<Item> items = client.getRecentUnlocks(-20);
+    verify(httpClient, times(1)).request(getBaseUrl() + "recent-unlocks/" + Configuration.RECENT_UNLOCKS_MIN_LIMIT);
     assertEquals(Configuration.RECENT_UNLOCKS_MIN_LIMIT, items.size());
   }
 
@@ -141,6 +166,22 @@ public class WaniKaniClientTest {
     assertEquals("ようか", first.getKana());
     assertEquals("eight days, day eight, eighth day", first.getMeaning());
     assertEquals("67", first.getPercentage());
+  }
+
+  @Test
+  public void testCriticalItemsWithTooHighOfAPercentage() throws Exception {
+    List<CriticalItem> items = client.getCriticalItems(Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE + 123);
+    verify(httpClient, times(1)).request(getBaseUrl() + "critical-items/" + Configuration.CRITICAL_ITEMS_MAX_PERCENTAGE);
+
+    assertEquals(222, items.size());
+  }
+
+  @Test
+  public void testCriticalItemsWithTooLowOfAPercentage() throws Exception {
+    List<CriticalItem> items = client.getCriticalItems(Configuration.CRITICAL_ITEMS_MIN_PERCENTAGE - 123);
+    verify(httpClient, times(1)).request(getBaseUrl() + "critical-items/" + Configuration.CRITICAL_ITEMS_MIN_PERCENTAGE);
+
+    assertEquals(0, items.size());
   }
 
   @Test
@@ -218,5 +259,10 @@ public class WaniKaniClientTest {
     client.getVocabulary(100);
   }
 
+  private String getBaseUrl() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    Method getBaseUrl = client.getClass().getDeclaredMethod("getBaseUrl");
+    getBaseUrl.setAccessible(true);
+    return (String) getBaseUrl.invoke(client);
+  }
 
 }

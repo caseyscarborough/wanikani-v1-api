@@ -1,0 +1,1931 @@
+{
+  "user_information": {
+    "username": "test-user",
+    "gravatar": "12ff337a70c384e924ae90500c3ff943",
+    "level": 2,
+    "title": "Turtles",
+    "about": "",
+    "website": null,
+    "twitter": "",
+    "topics_count": 0,
+    "posts_count": 0,
+    "creation_date": 1439205754,
+    "vacation_date": null
+  },
+  "requested_information": [
+    {
+      "type": "kanji",
+      "character": "知",
+      "meaning": "know",
+      "onyomi": "ち",
+      "kunyomi": "し.る",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 6,
+      "percentage": "67"
+    },
+    {
+      "type": "kanji",
+      "character": "後",
+      "meaning": "behind, after, back, rear",
+      "onyomi": "ご, こう",
+      "kunyomi": "うし.ろ, あと",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 6,
+      "percentage": "67"
+    },
+    {
+      "type": "vocabulary",
+      "character": "作用",
+      "kana": "さよう",
+      "meaning": "action, effect, operation",
+      "level": 5,
+      "percentage": "67"
+    },
+    {
+      "type": "vocabulary",
+      "character": "行き",
+      "kana": "ゆき, いき",
+      "meaning": "train direction, bound for",
+      "level": 5,
+      "percentage": "71"
+    },
+    {
+      "type": "vocabulary",
+      "character": "名字",
+      "kana": "みょうじ",
+      "meaning": "surname, last name, family name",
+      "level": 4,
+      "percentage": "75"
+    },
+    {
+      "type": "vocabulary",
+      "character": "王子",
+      "kana": "おうじ",
+      "meaning": "prince",
+      "level": 2,
+      "percentage": "77"
+    },
+    {
+      "type": "vocabulary",
+      "character": "生",
+      "kana": "なま",
+      "meaning": "fresh, raw",
+      "level": 3,
+      "percentage": "78"
+    },
+    {
+      "type": "vocabulary",
+      "character": "先",
+      "kana": "さき",
+      "meaning": "previous, ahead, past, former",
+      "level": 4,
+      "percentage": "78"
+    },
+    {
+      "type": "vocabulary",
+      "character": "太字",
+      "kana": "ふとじ",
+      "meaning": "bold letter, bold, bold character, bold text, boldface",
+      "level": 4,
+      "percentage": "79"
+    },
+    {
+      "type": "vocabulary",
+      "character": "上る",
+      "kana": "のぼる",
+      "meaning": "to climb",
+      "level": 1,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大文字",
+      "kana": "おおもじ",
+      "meaning": "capital letters, uppercase letters, capital letter, uppercase letter, uppercase, capital",
+      "level": 6,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "年中",
+      "kana": "ねんじゅう",
+      "meaning": "year round, all year, whole year, throughout the year, all year round",
+      "level": 4,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "三世",
+      "kana": "さんせい",
+      "meaning": "third generation",
+      "level": 4,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "多い",
+      "kana": "おおい",
+      "meaning": "many, much, lots of",
+      "level": 5,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "今すぐ",
+      "kana": "いますぐ",
+      "meaning": "at once, right now, immediately, right away",
+      "level": 5,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "方言",
+      "kana": "ほうげん",
+      "meaning": "dialect",
+      "level": 6,
+      "percentage": "80"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大した",
+      "kana": "たいした",
+      "meaning": "considerable, great, important, big deal",
+      "level": 1,
+      "percentage": "81"
+    },
+    {
+      "type": "vocabulary",
+      "character": "生きる",
+      "kana": "いきる",
+      "meaning": "to live, to be alive, to exist",
+      "level": 3,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "先ず",
+      "kana": "まず",
+      "meaning": "first of all, to start with, firstly, to begin with",
+      "level": 4,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "文字",
+      "kana": "もじ",
+      "meaning": "letter (of the alphabet), character, letters, characters, letter",
+      "level": 4,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一打",
+      "kana": "いちだ",
+      "meaning": "strike, stroke, blow",
+      "level": 4,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "体力",
+      "kana": "たいりょく",
+      "meaning": "physical strength, physical power",
+      "level": 5,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "人生",
+      "kana": "じんせい",
+      "meaning": "one's life, human life",
+      "level": 3,
+      "percentage": "82"
+    },
+    {
+      "type": "vocabulary",
+      "character": "年",
+      "kana": "とし",
+      "meaning": "year",
+      "level": 4,
+      "percentage": "82"
+    },
+    {
+      "type": "radical",
+      "character": "行",
+      "meaning": "go",
+      "image": null,
+      "level": 5,
+      "percentage": "83"
+    },
+    {
+      "type": "kanji",
+      "character": "又",
+      "meaning": "again",
+      "onyomi": null,
+      "kunyomi": "また",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "83"
+    },
+    {
+      "type": "vocabulary",
+      "character": "女子",
+      "kana": "じょし",
+      "meaning": "girl",
+      "level": 2,
+      "percentage": "83"
+    },
+    {
+      "type": "vocabulary",
+      "character": "名人",
+      "kana": "めいじん",
+      "meaning": "master, expert",
+      "level": 4,
+      "percentage": "83"
+    },
+    {
+      "type": "vocabulary",
+      "character": "〜人",
+      "kana": "にん",
+      "meaning": "number of people, people, people counter",
+      "level": 3,
+      "percentage": "83"
+    },
+    {
+      "type": "vocabulary",
+      "character": "八日",
+      "kana": "ようか",
+      "meaning": "eight days, day eight, eighth day",
+      "level": 2,
+      "percentage": "83"
+    },
+    {
+      "type": "vocabulary",
+      "character": "見える",
+      "kana": "みえる",
+      "meaning": "can see, visible, to be visible, to be able to see, able to see",
+      "level": 4,
+      "percentage": "84"
+    },
+    {
+      "type": "vocabulary",
+      "character": "少女",
+      "kana": "しょうじょ, おとめ",
+      "meaning": "young lady, little girl, virgin, maiden, daughter",
+      "level": 3,
+      "percentage": "84"
+    },
+    {
+      "type": "kanji",
+      "character": "女",
+      "meaning": "woman",
+      "onyomi": "じょ",
+      "kunyomi": "おんな, め",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "86"
+    },
+    {
+      "type": "kanji",
+      "character": "早",
+      "meaning": "early, fast, quick",
+      "onyomi": "そう",
+      "kunyomi": "はや.い",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "入る",
+      "kana": "はいる",
+      "meaning": "to enter",
+      "level": 1,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "六つ",
+      "kana": "むっつ",
+      "meaning": "six things",
+      "level": 2,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "水",
+      "kana": "みず",
+      "meaning": "water",
+      "level": 2,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "中止",
+      "kana": "ちゅうし",
+      "meaning": "suspension, stoppage, discontinuance, interruption",
+      "level": 3,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "早々",
+      "kana": "そうそう",
+      "meaning": "as soon as, just after, immediately after",
+      "level": 4,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "人気",
+      "kana": "にんき",
+      "meaning": "popular",
+      "level": 4,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "写す",
+      "kana": "うつす",
+      "meaning": "to copy",
+      "level": 4,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "米",
+      "kana": "こめ",
+      "meaning": "rice",
+      "level": 5,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "空",
+      "kana": "そら",
+      "meaning": "sky",
+      "level": 5,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "青年",
+      "kana": "せいねん",
+      "meaning": "youth, young man",
+      "level": 5,
+      "percentage": "86"
+    },
+    {
+      "type": "vocabulary",
+      "character": "男の子",
+      "kana": "おとこのこ",
+      "meaning": "boy",
+      "level": 5,
+      "percentage": "86"
+    },
+    {
+      "type": "kanji",
+      "character": "力",
+      "meaning": "power, strength",
+      "onyomi": "りょく, りき",
+      "kunyomi": "ちから",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "87"
+    },
+    {
+      "type": "kanji",
+      "character": "上",
+      "meaning": "above, up, over",
+      "onyomi": "じょう",
+      "kunyomi": "うえ, あ, のぼ, うわ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "五月",
+      "kana": "ごがつ",
+      "meaning": "may",
+      "level": 2,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "日",
+      "kana": "ひ",
+      "meaning": "sun, day",
+      "level": 2,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "出す",
+      "kana": "だす",
+      "meaning": "to remove, to hand over, to take out, to reveal",
+      "level": 2,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "生む",
+      "kana": "うむ",
+      "meaning": "to give birth",
+      "level": 3,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "立てる",
+      "kana": "たてる",
+      "meaning": "to stand up, to stand something up, to erect, to erect something",
+      "level": 2,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "元",
+      "kana": "もと",
+      "meaning": "origin",
+      "level": 3,
+      "percentage": "87"
+    },
+    {
+      "type": "vocabulary",
+      "character": "七日",
+      "kana": "なのか",
+      "meaning": "seventh day, day seven, seven days",
+      "level": 2,
+      "percentage": "87"
+    },
+    {
+      "type": "radical",
+      "character": "ハ",
+      "meaning": "fins",
+      "image": null,
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "radical",
+      "character": "勹",
+      "meaning": "enclosure",
+      "image": null,
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "radical",
+      "character": "母",
+      "meaning": "drawer",
+      "image": null,
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "radical",
+      "character": "矢",
+      "meaning": "arrow",
+      "image": null,
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "kanji",
+      "character": "八",
+      "meaning": "eight",
+      "onyomi": "はち",
+      "kunyomi": "や.*",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "kanji",
+      "character": "口",
+      "meaning": "mouth",
+      "onyomi": "こう, く",
+      "kunyomi": "くち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "kanji",
+      "character": "石",
+      "meaning": "stone",
+      "onyomi": "せき",
+      "kunyomi": "いし",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "88"
+    },
+    {
+      "type": "kanji",
+      "character": "友",
+      "meaning": "friend",
+      "onyomi": "ゆう",
+      "kunyomi": "とも",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一つ",
+      "kana": "ひとつ",
+      "meaning": "one thing",
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大きさ",
+      "kana": "おおきさ",
+      "meaning": "size",
+      "level": 1,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "石",
+      "kana": "いし",
+      "meaning": "stone",
+      "level": 2,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "半分",
+      "kana": "はんぶん",
+      "meaning": "half",
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "分",
+      "kana": "ぶん, ふん",
+      "meaning": "minute, part",
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "耳打ち",
+      "kana": "みみうち",
+      "meaning": "whisper in ear, whisper in one's ear, whisper in someone's ear",
+      "level": 4,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "主に",
+      "kana": "おもに",
+      "meaning": "mainly, primarily",
+      "level": 4,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "他",
+      "kana": "ほか",
+      "meaning": "other",
+      "level": 4,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "小皿",
+      "kana": "こざら",
+      "meaning": "small plate, small dish, little plate, little dish",
+      "level": 4,
+      "percentage": "88"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大人しい",
+      "kana": "おとなしい",
+      "meaning": "obedient, docile, quiet",
+      "level": 3,
+      "percentage": "88"
+    },
+    {
+      "type": "radical",
+      "character": "二",
+      "meaning": "two",
+      "image": null,
+      "level": 1,
+      "percentage": "89"
+    },
+    {
+      "type": "radical",
+      "character": "冖",
+      "meaning": "forehead",
+      "image": null,
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "大",
+      "meaning": "big, large",
+      "onyomi": "たい, だい",
+      "kunyomi": "おお",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "小",
+      "meaning": "small, little",
+      "onyomi": "しょう",
+      "kunyomi": "ちい.さい, こ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "万",
+      "meaning": "ten thousand",
+      "onyomi": "まん, ばん",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "世",
+      "meaning": "generation",
+      "onyomi": "せ, せい",
+      "kunyomi": "よ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "主",
+      "meaning": "master",
+      "onyomi": "しゅ",
+      "kunyomi": "おも, ぬし",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "kanji",
+      "character": "名",
+      "meaning": "name, famous",
+      "onyomi": "めい, みょう",
+      "kunyomi": "な",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "六月",
+      "kana": "ろくがつ",
+      "meaning": "june",
+      "level": 2,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "上手",
+      "kana": "じょうず",
+      "meaning": "good at, skillful, skilled at, skilled",
+      "level": 2,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "王女",
+      "kana": "おうじょ",
+      "meaning": "princess",
+      "level": 2,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "牛",
+      "kana": "うし",
+      "meaning": "cow",
+      "level": 3,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "中古",
+      "kana": "ちゅうこ",
+      "meaning": "second hand, used, secondhand",
+      "level": 3,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "母",
+      "kana": "はは",
+      "meaning": "mom, mum, ma",
+      "level": 3,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "去年",
+      "kana": "きょねん",
+      "meaning": "last year",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一代",
+      "kana": "いちだい",
+      "meaning": "lifetime, one lifetime",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "打つ",
+      "kana": "うつ",
+      "meaning": "to hit, to pound, to type",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "池",
+      "kana": "いけ",
+      "meaning": "pond",
+      "level": 5,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "走る",
+      "kana": "はしる",
+      "meaning": "to run",
+      "level": 5,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "内",
+      "kana": "うち",
+      "meaning": "inside, within",
+      "level": 3,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "十日",
+      "kana": "とおか",
+      "meaning": "ten days, day ten, tenth day",
+      "level": 2,
+      "percentage": "89"
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸ごと",
+      "kana": "まるごと",
+      "meaning": "in its entirety, whole, wholly, entirely",
+      "level": 4,
+      "percentage": "89"
+    },
+    {
+      "type": "radical",
+      "character": "一",
+      "meaning": "ground",
+      "image": null,
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "radical",
+      "character": "亠",
+      "meaning": "lid",
+      "image": null,
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "radical",
+      "character": "力",
+      "meaning": "power",
+      "image": null,
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "radical",
+      "character": "小",
+      "meaning": "small",
+      "image": null,
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "kanji",
+      "character": "夕",
+      "meaning": "evening",
+      "onyomi": "せき",
+      "kunyomi": "ゆう",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "力",
+      "kana": "ちから",
+      "meaning": "power, strength",
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "三人",
+      "kana": "さんにん",
+      "meaning": "three people, three persons",
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "下",
+      "kana": "した",
+      "meaning": "down, below, under, beneath",
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "口",
+      "kana": "くち",
+      "meaning": "mouth",
+      "level": 1,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "小さい",
+      "kana": "ちいさい",
+      "meaning": "small, little",
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "出口",
+      "kana": "でぐち",
+      "meaning": "exit",
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "右手",
+      "kana": "みぎて",
+      "meaning": "right hand",
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "正しい",
+      "kana": "ただしい",
+      "meaning": "correct, true",
+      "level": 2,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "切れる",
+      "kana": "きれる",
+      "meaning": "to be cut",
+      "level": 3,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大切",
+      "kana": "たいせつ",
+      "meaning": "important, precious, valuable",
+      "level": 3,
+      "percentage": "90"
+    },
+    {
+      "type": "vocabulary",
+      "character": "切手",
+      "kana": "きって",
+      "meaning": "postage stamp, stamp",
+      "level": 4,
+      "percentage": "90"
+    },
+    {
+      "type": "kanji",
+      "character": "少",
+      "meaning": "few, a little",
+      "onyomi": "しょう",
+      "kunyomi": "すこ.し",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "形",
+      "meaning": "shape, appearance, form",
+      "onyomi": "けい",
+      "kunyomi": "かた, かたち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "来",
+      "meaning": "come",
+      "onyomi": "らい",
+      "kunyomi": "く.る",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "社",
+      "meaning": "company",
+      "onyomi": "しゃ",
+      "kunyomi": "やしろ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "角",
+      "meaning": "angle, corner",
+      "onyomi": "かく",
+      "kunyomi": "かど",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "里",
+      "meaning": "home village, home town, hometown",
+      "onyomi": "り",
+      "kunyomi": "さと",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "草",
+      "meaning": "grass, weed",
+      "onyomi": "そう",
+      "kunyomi": "くさ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "八つ",
+      "kana": "やっつ",
+      "meaning": "eight things",
+      "level": 1,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大人",
+      "kana": "おとな",
+      "meaning": "adult",
+      "level": 1,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一千",
+      "kana": "いっせん",
+      "meaning": "one thousand",
+      "level": 2,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "六日",
+      "kana": "むいか",
+      "meaning": "sixth day, day six, six days",
+      "level": 2,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一文字",
+      "kana": "いちもんじ, いちもじ",
+      "meaning": "straight line",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一気",
+      "kana": "いっき",
+      "meaning": "one breath, one go, one sitting",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "気分",
+      "kana": "きぶん",
+      "meaning": "feeling, mood",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "見せる",
+      "kana": "みせる",
+      "meaning": "to show",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "見方",
+      "kana": "みかた",
+      "meaning": "way of seeing, point of view, perspective, viewpoint",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "貝",
+      "kana": "かい",
+      "meaning": "shell, shellfish, clam",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "不足",
+      "kana": "ふそく",
+      "meaning": "shortage, physical shortage, insufficient, not sufficient, not enough",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "代わる",
+      "kana": "かわる",
+      "meaning": "to replace, to substitute for, to substitute, to be replaced, to be substituted, to be substituted for",
+      "level": 4,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "林",
+      "kana": "はやし",
+      "meaning": "forest, woods",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大声",
+      "kana": "おおごえ",
+      "meaning": "large voice, loud voice, big voice",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "男の人",
+      "kana": "おとこのひと",
+      "meaning": "man",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一生",
+      "kana": "いっしょう",
+      "meaning": "whole life, entire life, a lifetime, all through life, one existence, a generation, an age",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大体",
+      "kana": "だいたい",
+      "meaning": "general, approximate, outline, gist",
+      "level": 5,
+      "percentage": "91"
+    },
+    {
+      "type": "kanji",
+      "character": "方",
+      "meaning": "direction, way",
+      "onyomi": "ほう",
+      "kunyomi": "かた",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "去",
+      "meaning": "past",
+      "onyomi": "きょ, こ",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "氷",
+      "meaning": "ice",
+      "onyomi": "ひょう",
+      "kunyomi": "こおり",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "当",
+      "meaning": "right, success, correct",
+      "onyomi": "とう",
+      "kunyomi": "あ.たる",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "近",
+      "meaning": "near, close",
+      "onyomi": "きん",
+      "kunyomi": "ちか.い",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "音",
+      "meaning": "sound",
+      "onyomi": "おん",
+      "kunyomi": "おと, ね",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 5,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "今",
+      "kana": "いま",
+      "meaning": "now",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "切る",
+      "kana": "きる",
+      "meaning": "to cut",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "お兄さん",
+      "kana": "おにいさん",
+      "meaning": "older brother, big brother, elder brother",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "冬",
+      "kana": "ふゆ",
+      "meaning": "winter",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "北",
+      "kana": "きた",
+      "meaning": "north",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "古い",
+      "kana": "ふるい",
+      "meaning": "old",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "外",
+      "kana": "そと",
+      "meaning": "outside",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "市立",
+      "kana": "しりつ",
+      "meaning": "municipal, city",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "休む",
+      "kana": "やすむ",
+      "meaning": "to rest",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "村人",
+      "kana": "むらびと",
+      "meaning": "villager",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "男",
+      "kana": "おとこ",
+      "meaning": "man",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "足りる",
+      "kana": "たりる",
+      "meaning": "to be enough, to be sufficient, to suffice",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "足",
+      "kana": "あし",
+      "meaning": "foot, leg",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "代用",
+      "kana": "だいよう",
+      "meaning": "substitution",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "平日",
+      "kana": "へいじつ",
+      "meaning": "weekdays",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "申す",
+      "kana": "もうす",
+      "meaning": "to say humbly, to say, to humbly say",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "皿",
+      "kana": "さら",
+      "meaning": "plate, dish",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "不正",
+      "kana": "ふせい",
+      "meaning": "injustice, unfairness",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "毛糸",
+      "kana": "けいと",
+      "meaning": "wool yarn, yarn",
+      "level": 5,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "百",
+      "kana": "ひゃく",
+      "meaning": "hundred, one hundred",
+      "level": 4,
+      "percentage": "92"
+    },
+    {
+      "type": "vocabulary",
+      "character": "今日は",
+      "kana": "こんにちは",
+      "meaning": "hello, good day",
+      "level": 3,
+      "percentage": "92"
+    },
+    {
+      "type": "kanji",
+      "character": "入",
+      "meaning": "enter",
+      "onyomi": "にゅう",
+      "kunyomi": "はい.る, い.れる",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "川",
+      "meaning": "river",
+      "onyomi": "せん",
+      "kunyomi": "かわ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 1,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "土",
+      "meaning": "soil, earth, ground, dirt",
+      "onyomi": "ど, と",
+      "kunyomi": "つち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "火",
+      "meaning": "fire",
+      "onyomi": "か",
+      "kunyomi": "ひ, ほ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "玉",
+      "meaning": "ball",
+      "onyomi": null,
+      "kunyomi": "たま",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "目",
+      "meaning": "eye",
+      "onyomi": "もく",
+      "kunyomi": "め",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "切",
+      "meaning": "cut",
+      "onyomi": "せつ",
+      "kunyomi": "き.る",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "太",
+      "meaning": "fat",
+      "onyomi": "たい",
+      "kunyomi": "ふと.い",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "牛",
+      "meaning": "cow",
+      "onyomi": "ぎゅう",
+      "kunyomi": "うし",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "字",
+      "meaning": "letter, character, symbol",
+      "onyomi": "じ",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 4,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "十",
+      "kana": "じゅう",
+      "meaning": "ten",
+      "level": 1,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "下さい",
+      "kana": "ください",
+      "meaning": "please",
+      "level": 1,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "山",
+      "kana": "やま",
+      "meaning": "mountain",
+      "level": 1,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "丸",
+      "kana": "まる",
+      "meaning": "circle, round, circular",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "五つ",
+      "kana": "いつつ",
+      "meaning": "five things",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "円い",
+      "kana": "まるい",
+      "meaning": "round, circular",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "月",
+      "kana": "つき",
+      "meaning": "moon, month",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "十月",
+      "kana": "じゅうがつ",
+      "meaning": "october",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "火",
+      "kana": "ひ",
+      "meaning": "fire",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "子犬",
+      "kana": "こいぬ",
+      "meaning": "puppy",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "四日",
+      "kana": "よっか",
+      "meaning": "fourth day, day four, four days",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "本",
+      "kana": "ほん",
+      "meaning": "book, origin, real, main",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "久しぶり",
+      "kana": "ひさしぶり",
+      "meaning": "long time no see",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "分ける",
+      "kana": "わける",
+      "meaning": "to separate, to divide, to part, to split",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "太い",
+      "kana": "ふとい",
+      "meaning": "fat",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "少し",
+      "kana": "すこし",
+      "meaning": "a little, a few, few",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "少ない",
+      "kana": "すくない",
+      "meaning": "a few, few, scarce",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "止まる",
+      "kana": "とまる",
+      "meaning": "to stop",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "毛",
+      "kana": "け",
+      "meaning": "fur, hair",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "外れ",
+      "kana": "はずれ",
+      "meaning": "extremity, furthest point, end, outskirts, outer limits, edge, miss, failure",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "お母さん",
+      "kana": "おかあさん",
+      "meaning": "mother",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "用いる",
+      "kana": "もちいる",
+      "meaning": "to utilize, to use, to utilise",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "先々月",
+      "kana": "せんせんげつ",
+      "meaning": "month before last, the month before last",
+      "level": 4,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "先月",
+      "kana": "せんげつ",
+      "meaning": "last month, previous month",
+      "level": 4,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "年内",
+      "kana": "ねんない",
+      "meaning": "within a year, within the year",
+      "level": 4,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "引き分け",
+      "kana": "ひきわけ",
+      "meaning": "tie, draw",
+      "level": 4,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "九日",
+      "kana": "ここのか",
+      "meaning": "nine days, day nine, ninth day",
+      "level": 2,
+      "percentage": "93"
+    },
+    {
+      "type": "vocabulary",
+      "character": "用",
+      "kana": "よう",
+      "meaning": "task, use, duty, service, business, purpose, function",
+      "level": 3,
+      "percentage": "93"
+    },
+    {
+      "type": "kanji",
+      "character": "十",
+      "meaning": "ten",
+      "onyomi": "じゅう",
+      "kunyomi": "とお.*",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "kanji",
+      "character": "千",
+      "meaning": "thousand",
+      "onyomi": "せん",
+      "kunyomi": "ち",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "kanji",
+      "character": "了",
+      "meaning": "finish, complete, end",
+      "onyomi": "りょう",
+      "kunyomi": null,
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "kanji",
+      "character": "六",
+      "meaning": "six",
+      "onyomi": "ろく",
+      "kunyomi": "む.つ",
+      "nanori": null,
+      "important_reading": "onyomi",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "kanji",
+      "character": "犬",
+      "meaning": "dog",
+      "onyomi": "けん",
+      "kunyomi": "いぬ",
+      "nanori": null,
+      "important_reading": "kunyomi",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "三つ",
+      "kana": "みっつ",
+      "meaning": "three things",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "上",
+      "kana": "うえ",
+      "meaning": "up, above",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "下げる",
+      "kana": "さげる",
+      "meaning": "to hang, to lower, to hang something, to lower something",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "入り口",
+      "kana": "いりぐち",
+      "meaning": "entrance",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "大きい",
+      "kana": "おおきい",
+      "meaning": "big, large",
+      "level": 1,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "夕べ",
+      "kana": "ゆうべ",
+      "meaning": "evening, last night",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "千円",
+      "kana": "せんえん",
+      "meaning": "1000 yen, one thousand yen, a thousand yen, thousand yen",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "天才",
+      "kana": "てんさい",
+      "meaning": "genius",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "木",
+      "kana": "き",
+      "meaning": "tree, wood",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "四月",
+      "kana": "しがつ",
+      "meaning": "april",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "玉ねぎ",
+      "kana": "たまねぎ",
+      "meaning": "onion, round onion",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "立つ",
+      "kana": "たつ",
+      "meaning": "to stand",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "引く",
+      "kana": "ひく",
+      "meaning": "to pull",
+      "level": 3,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "〜台",
+      "kana": "だい",
+      "meaning": "big machine, big device, machine, device, machine counter",
+      "level": 3,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "二日",
+      "kana": "ふつか",
+      "meaning": "second day, day two, two days",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "一日",
+      "kana": "いちにち, ついたち",
+      "meaning": "one day, day one, first day",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "水中",
+      "kana": "すいちゅう",
+      "meaning": "underwater",
+      "level": 2,
+      "percentage": "94"
+    },
+    {
+      "type": "vocabulary",
+      "character": "人口",
+      "kana": "じんこう",
+      "meaning": "population",
+      "level": 1,
+      "percentage": "95"
+    }
+  ]
+}
