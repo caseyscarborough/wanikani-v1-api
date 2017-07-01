@@ -25,7 +25,7 @@ Add the following to your pom.xml file:
 
 ## Usage
 
-Create an instance of the client using your API key. You can get your API key from [your WaniKani account page](https://www.wanikani.com/account).
+Create an instance of the client using your API key. You can get your API key from [your WaniKani account page](https://www.wanikani.com/settings/account#public-api-key).
 
 ```java
 WaniKaniClient client = new WaniKaniClient("your-api-key");
